@@ -3,7 +3,8 @@
 How the generator turns a seed into a validated dataset, which file does each step, and what one
 request looks like in the output. For the rules behind each decision see
 [business_rules.md](business_rules.md); for the tables see [erd.md](erd.md) and
-[data_dictionary.md](data_dictionary.md); for commands see [HOW_TO_RUN.md](HOW_TO_RUN.md).
+- **Documentation**: README, [pipeline.md](pipeline.md), [business_rules.md](business_rules.md), [erd.md](erd.md), [data_dictionary.md](data_dictionary.md), `manifest.json`.
+
 
 ## 1. Pipeline at a glance
 

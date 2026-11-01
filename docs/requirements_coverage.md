@@ -188,7 +188,7 @@ benchmark of a learned detector.
 
 ### (g) Reproducibility, documentation and lawful provenance
 - **Reproducibility**: fixed seed 20261022; per-entity random streams; byte-identical output across two runs, and identical to the shipped files by both the manifest checksums and the bytes on disk (`reports/reproducibility.md`, 58 files, with the Python version and platform of the run).
-- **Documentation**: README, [HOW_TO_RUN.md](HOW_TO_RUN.md), [pipeline.md](pipeline.md), [business_rules.md](business_rules.md), [erd.md](erd.md), [data_dictionary.md](data_dictionary.md), `manifest.json`.
+- **Documentation**: README, [pipeline.md](pipeline.md), [business_rules.md](business_rules.md), [erd.md](erd.md), [data_dictionary.md](data_dictionary.md), `manifest.json`.
 - **Provenance**: fully synthetic, no external data. Names are random combinations of generic words, e-mail addresses use `example.com`, and FX rates are a synthetic random walk. Recorded in the `provenance` block of `manifest.json`, which lists each external-source field from the brief (source URL, dataset version, retrieval date, licence/terms, attribution, transformations, fields discarded) as not applicable; MIT licence.
 
 ## 9. Primary actors

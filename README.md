@@ -101,7 +101,6 @@ enforced in the SQL seed and re-checked by the validator.
   generated from `schema.py`: [docs/data_dictionary.md](docs/data_dictionary.md)
 * Pipeline walkthrough (stage -> file map, glossary, one request traced end to end):
   [docs/pipeline.md](docs/pipeline.md)
-* Step-by-step run guide with expected output and troubleshooting: [docs/HOW_TO_RUN.md](docs/HOW_TO_RUN.md)
 * Every point of the problem statement mapped to its evidence, including the evaluation focus,
   distributions and actors: [docs/requirements_coverage.md](docs/requirements_coverage.md)
 
@@ -203,7 +202,7 @@ procurement_synth/   generator package (config, schema, master, demand, budget, 
                      engine, orders, anomalies, finalize, export, validate, checks_domain,
                      controls, metrics, docs, cli)
 tests/               end-to-end pytest suite
-docs/                business_rules.md, erd.md, pipeline.md, HOW_TO_RUN.md,
+docs/                business_rules.md, erd.md, pipeline.md,
                      requirements_coverage.md, data_dictionary.md (generated)
 data/starter, data/full   generated datasets and reports
 ```
