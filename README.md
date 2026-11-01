@@ -99,6 +99,11 @@ enforced in the SQL seed and re-checked by the validator.
 * ERD, cardinalities and state machines: [docs/erd.md](docs/erd.md)
 * Data dictionary (type, required, allowed values, unit, uniqueness and rule for every column),
   generated from `schema.py`: [docs/data_dictionary.md](docs/data_dictionary.md)
+* Pipeline walkthrough (stage -> file map, glossary, one request traced end to end):
+  [docs/pipeline.md](docs/pipeline.md)
+* Step-by-step run guide with expected output and troubleshooting: [docs/HOW_TO_RUN.md](docs/HOW_TO_RUN.md)
+* Every point of the problem statement mapped to its evidence, including the evaluation focus,
+  distributions and actors: [docs/requirements_coverage.md](docs/requirements_coverage.md)
 
 ID conventions follow the brief: `PR-2026-000001`, `RFQ-2026-000001`, `QUO-SUP0001-2026-000001`
 (global counter), `PO-2026-000001`, `DEL-PO-2026-000001-01`. Child lines append `-Lnn`. IDs are
@@ -114,7 +119,7 @@ assigned in event-time order and never change.
 | Quote expiry | 52 quotes excluded as `EXPIRED` at evaluation (legitimate) + 8 labelled expired awards |
 | Supplier risk flags | 41 effective-dated flags. HIGH blocks invitation and award; MEDIUM can trigger a risk-mitigation award; delivery and quality flags worsen performance |
 | Partial deliveries | 2-3 shipment POs, inspection rejections with replacements, 28 short-closed POs |
-| Boundary cases | Tier edges, competition waivers (only 2 bids), awards withdrawn when the supplier deactivates, requests still open at the snapshot |
+| Boundary cases | Tier edges, competition waivers (only 2 bids), requests still open at the snapshot. Awards are withdrawn if the supplier deactivates before the PO (rule implemented; no case occurs with the default seed). |
 
 ### Required negative scenarios (ground truth)
 
@@ -196,6 +201,7 @@ procurement_synth/   generator package (config, schema, master, demand, budget, 
                      engine, orders, anomalies, finalize, export, validate, checks_domain,
                      controls, metrics, docs, cli)
 tests/               end-to-end pytest suite
-docs/                business_rules.md, erd.md, data_dictionary.md (generated)
+docs/                business_rules.md, erd.md, pipeline.md, HOW_TO_RUN.md,
+                     requirements_coverage.md, data_dictionary.md (generated)
 data/starter, data/full   generated datasets and reports
 ```

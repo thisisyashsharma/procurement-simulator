@@ -138,3 +138,18 @@ stateDiagram-v2
 Supplier status (`ACTIVE`, `SUSPENDED`, `INACTIVE`) and risk flags are effective-dated: each row
 has an interval, and every decision (invitation, evaluation, PO) is checked against the status
 on its own date.
+
+## Effective-dated records
+
+| Table | Validity columns | Used for |
+|---|---|---|
+| `supplier_status_history` | `effective_from`, `effective_to` (half-open; null = current) | Supplier must be `ACTIVE` on the invitation, evaluation and PO dates |
+| `supplier_risk_flag` | `raised_date`, `cleared_date` (null = open) | An open HIGH flag blocks invitation and award; MEDIUM can trigger AWD-3; delivery and quality flags worsen performance |
+| `requester` | `hire_date`, `termination_date` | Requester must be employed on the submission date; deliveries are received by the requester only while employed |
+| `budget` | `effective_from`, `effective_to` | FY2026 budget period |
+| `supplier_category` | `effective_from` | Date the supplier was approved for the category |
+| `department` | `effective_from` | Date the department record became effective |
+| `fx_rate` | `rate_month` | Quote month rate at evaluation; issue month rate on the PO |
+
+`supplier.status` and `supplier.risk_rating` are snapshot values derived from the history tables
+at `AS_OF`. Decisions never use them.

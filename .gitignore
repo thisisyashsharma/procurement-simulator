@@ -7,3 +7,6 @@ venv/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Personal Hinglish study notes (mirror of docs/), not part of the submission
+doc/
