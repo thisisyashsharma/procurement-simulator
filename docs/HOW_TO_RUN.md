@@ -42,6 +42,7 @@ generated starter (seed 20261022) -> ...\data\starter
   ...
 validation PASS: 547 checks, 0 failing
 reproducibility starter: identical across 58 files
+  shipped data/starter matches: 58/58 files
 generated full (seed 20261022) -> ...\data\full
   purchase_request              1200
   rfq                            500
@@ -51,6 +52,7 @@ generated full (seed 20261022) -> ...\data\full
   ground truth labels             65
 validation PASS: 547 checks, 0 failing
 reproducibility full: identical across 58 files
+  shipped data/full matches: 58/58 files
 ```
 
 Success means: both lines say `validation PASS` and `identical`, and the command exits with no error.
@@ -62,7 +64,7 @@ python -m pip install pytest
 python -m pytest -q
 ```
 
-Expected: `7 passed`.
+Expected: `9 passed`.
 
 ## Running it again
 

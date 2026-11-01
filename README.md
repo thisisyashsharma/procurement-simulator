@@ -15,7 +15,7 @@ file, and a validator checks the whole dataset (547 checks) on every build.
 ```bash
 python --version                              # 3.10 or newer (built and tested on 3.14)
 python -m procurement_synth all               # starter + full: generate, validate, reproduce, docs
-python -m pytest -q                           # 7 end-to-end tests (pip install pytest)
+python -m pytest -q                           # 9 end-to-end tests (pip install pytest)
 ```
 
 Individual steps:
@@ -24,7 +24,7 @@ Individual steps:
 python -m procurement_synth generate --scale full --seed 20261022   # -> data/full
 python -m procurement_synth generate --scale full --no-anomalies --out /tmp/clean   # clean baseline
 python -m procurement_synth validate --data data/full               # -> data/full/reports/
-python -m procurement_synth reproduce --scale full                  # generate twice, compare checksums
+python -m procurement_synth reproduce --scale full                  # generate twice, compare with each other and data/full
 python -m procurement_synth docs                                    # regenerate docs/data_dictionary.md
 ```
 
@@ -44,7 +44,7 @@ The full build takes about 10 seconds.
 | Check | Result |
 |---|---|
 | Validation suite (`data/full/reports/validation_summary.md`) | **PASS**: 547 checks, 0 failing |
-| Reproducibility (`reports/reproducibility.md`) | 58 files identical across two runs |
+| Reproducibility (`reports/reproducibility.md`) | 58 files identical across two runs and to the shipped copy in `data/full` |
 | Clean baseline (`reports/baseline_check.json`) | 0 control findings, 0 illegal transitions |
 | Control checks vs ground truth (`reports/metrics.md`) | 65 labels, precision 1.0 and recall 1.0 for all 8 types |
 
@@ -182,7 +182,9 @@ All data is synthetic. No external dataset was downloaded, scraped or transforme
 company names are random combinations of generic words, e-mail addresses use the reserved
 `example.com` domain, and FX rates are a synthetic random walk from illustrative starting values,
 not market data. Any resemblance to real people or companies is coincidental. Details are in the
-`provenance` block of each `manifest.json`. Code and data are released under the MIT licence.
+`provenance` block of each `manifest.json`, which also records each external-source field the brief
+asks for (source URL, dataset version, retrieval date, licence/terms, attribution, transformations,
+fields discarded) as not applicable. Code and data are released under the MIT licence.
 
 ## Assumptions and limitations
 

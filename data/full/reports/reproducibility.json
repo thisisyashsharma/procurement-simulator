@@ -2,412 +2,475 @@
  "scale": "full",
  "seed": 20261022,
  "identical": true,
+ "python_version": "3.14.4",
+ "platform": "Windows-11",
+ "shipped_dir": "data/full",
+ "shipped_identical": true,
+ "shipped_not_compared_reason": null,
  "files": [
   {
    "path": "csv/approval.csv",
    "rows": 1978,
    "sha256_run1": "cb74aac516f587d11f5e65cbfec317607122df89756896f39988f2cc59d82b3e",
    "sha256_run2": "cb74aac516f587d11f5e65cbfec317607122df89756896f39988f2cc59d82b3e",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/budget.csv",
    "rows": 33,
    "sha256_run1": "132dffb6ed71126ffdf91c211dcf683bbe795d2d2701047cf358d1ac21bea7f9",
    "sha256_run2": "132dffb6ed71126ffdf91c211dcf683bbe795d2d2701047cf358d1ac21bea7f9",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/budget_balance.csv",
    "rows": 33,
    "sha256_run1": "584dddb7f0e03be4ea82ad2b7a3966e299cc897727824d79861fe5e3cb515afa",
    "sha256_run2": "584dddb7f0e03be4ea82ad2b7a3966e299cc897727824d79861fe5e3cb515afa",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/budget_transaction.csv",
    "rows": 3808,
    "sha256_run1": "5dfec40b810b0bbb099aafaa41a120bc63ecff3ccb13e9c086095fb4f11eb154",
    "sha256_run2": "5dfec40b810b0bbb099aafaa41a120bc63ecff3ccb13e9c086095fb4f11eb154",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/delivery.csv",
    "rows": 1076,
    "sha256_run1": "bb85781b92666bae6c1c9ccf92b24a509ab1aca91deaca06bd769e5f03ff9ec2",
    "sha256_run2": "bb85781b92666bae6c1c9ccf92b24a509ab1aca91deaca06bd769e5f03ff9ec2",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/delivery_line.csv",
    "rows": 2049,
    "sha256_run1": "04b2c3f79847d8500c2532fb14f635b90087ab9ca33f504f0d681542c4df8aaf",
    "sha256_run2": "04b2c3f79847d8500c2532fb14f635b90087ab9ca33f504f0d681542c4df8aaf",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/department.csv",
    "rows": 16,
    "sha256_run1": "9b1283f58e7e9faddc882806ab399c17436a7ab49392de72678fee3075d73d93",
    "sha256_run2": "9b1283f58e7e9faddc882806ab399c17436a7ab49392de72678fee3075d73d93",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/exception_register.csv",
    "rows": 954,
    "sha256_run1": "693d2eadfbe9919b3822bc1a9be116383e688aca210027b5894e931530e0303f",
    "sha256_run2": "693d2eadfbe9919b3822bc1a9be116383e688aca210027b5894e931530e0303f",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/fx_rate.csv",
    "rows": 84,
    "sha256_run1": "f3e8599de9a7ba9d9a5dde819ca4a3e753fb16693fa0c17f68da8b973a3e1607",
    "sha256_run2": "f3e8599de9a7ba9d9a5dde819ca4a3e753fb16693fa0c17f68da8b973a3e1607",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/item.csv",
    "rows": 172,
    "sha256_run1": "38c7b30b2339e42f1b8dd8be19fe9fefeb27716e4ba7a717623d3a6a1c7bcd7f",
    "sha256_run2": "38c7b30b2339e42f1b8dd8be19fe9fefeb27716e4ba7a717623d3a6a1c7bcd7f",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/item_category.csv",
    "rows": 14,
    "sha256_run1": "e0f3f93bb3412b6b2f27135b4c56a6d5479cc9ed2c15cd18d27c6d4dba076fb6",
    "sha256_run2": "e0f3f93bb3412b6b2f27135b4c56a6d5479cc9ed2c15cd18d27c6d4dba076fb6",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/po_line.csv",
    "rows": 1841,
    "sha256_run1": "89b456f6bdecad3bc6380c57ea7c1e284e3b0ab590dfecdd6f1b0699325f8760",
    "sha256_run2": "89b456f6bdecad3bc6380c57ea7c1e284e3b0ab590dfecdd6f1b0699325f8760",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/purchase_order.csv",
    "rows": 918,
    "sha256_run1": "3def191b4a86c420c73296340d7d721be0140d91b95870b9d15cb15d5ac37c3d",
    "sha256_run2": "3def191b4a86c420c73296340d7d721be0140d91b95870b9d15cb15d5ac37c3d",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/purchase_request.csv",
    "rows": 1200,
    "sha256_run1": "21c704bd241c293e9c02249ffb12abf0fcc409abdb408c13550f5113a6539e39",
    "sha256_run2": "21c704bd241c293e9c02249ffb12abf0fcc409abdb408c13550f5113a6539e39",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/quote_evaluation.csv",
    "rows": 1404,
    "sha256_run1": "242601dc906ff5e7af5109120d5e3302c72bfced05250a75e411844d95e5add3",
    "sha256_run2": "242601dc906ff5e7af5109120d5e3302c72bfced05250a75e411844d95e5add3",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/quote_line.csv",
    "rows": 2665,
    "sha256_run1": "5c9e9fcde10479ed6d6cd9035d7df023ab196273a5ed8416d2fceeaab652fef2",
    "sha256_run2": "5c9e9fcde10479ed6d6cd9035d7df023ab196273a5ed8416d2fceeaab652fef2",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/request_line.csv",
    "rows": 2195,
    "sha256_run1": "a41a4e40b5b99ee4853bc9f541b0cc7dcc99ffa5f67fd01b7b9ab970347b1be7",
    "sha256_run2": "a41a4e40b5b99ee4853bc9f541b0cc7dcc99ffa5f67fd01b7b9ab970347b1be7",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/requester.csv",
    "rows": 300,
    "sha256_run1": "4ef087c88adedebb2f21c53d326aee67850ba374eefcc29a47079f60431a7036",
    "sha256_run2": "4ef087c88adedebb2f21c53d326aee67850ba374eefcc29a47079f60431a7036",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/rfq.csv",
    "rows": 500,
    "sha256_run1": "47cd4690e6c0f08ce3d122e93475c53c88a892d31371b6fb9d728cb9ed3f0fdb",
    "sha256_run2": "47cd4690e6c0f08ce3d122e93475c53c88a892d31371b6fb9d728cb9ed3f0fdb",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/rfq_award.csv",
    "rows": 455,
    "sha256_run1": "37be6f7bf7c4a28c6dbb232b6944b98edabf976db05a132767aa160354963f21",
    "sha256_run2": "37be6f7bf7c4a28c6dbb232b6944b98edabf976db05a132767aa160354963f21",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/rfq_supplier.csv",
    "rows": 2354,
    "sha256_run1": "2333cb29ede4bad5269b8e6db23f9c80b8a293943d2bd2fe7cb4779c100b6cd6",
    "sha256_run2": "2333cb29ede4bad5269b8e6db23f9c80b8a293943d2bd2fe7cb4779c100b6cd6",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/status_event.csv",
    "rows": 13479,
    "sha256_run1": "5c8a40dee2708b726f66ce2e37c7d2b3a96a286964b342a7a44f74fd173fcd5d",
    "sha256_run2": "5c8a40dee2708b726f66ce2e37c7d2b3a96a286964b342a7a44f74fd173fcd5d",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/supplier.csv",
    "rows": 120,
    "sha256_run1": "0bbdaae71e6164fb8d44537a25fb64523297414ad637fcdbe73b356502776e35",
    "sha256_run2": "0bbdaae71e6164fb8d44537a25fb64523297414ad637fcdbe73b356502776e35",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/supplier_category.csv",
    "rows": 210,
    "sha256_run1": "7ab9e03603de1fb6df35271c96b966d17418caeca57fcc79cd553212af1140e9",
    "sha256_run2": "7ab9e03603de1fb6df35271c96b966d17418caeca57fcc79cd553212af1140e9",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/supplier_quote.csv",
    "rows": 1500,
    "sha256_run1": "6d30bea1bd4ea0313c1cbba827c0261389c7ce685c9f0bb27f115bc16676ce0c",
    "sha256_run2": "6d30bea1bd4ea0313c1cbba827c0261389c7ce685c9f0bb27f115bc16676ce0c",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/supplier_risk_flag.csv",
    "rows": 41,
    "sha256_run1": "8bc718890739d7de8e58a5b1d1c006fdb581a917e9c1aa60052e6424c8f4df04",
    "sha256_run2": "8bc718890739d7de8e58a5b1d1c006fdb581a917e9c1aa60052e6424c8f4df04",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "csv/supplier_status_history.csv",
    "rows": 141,
    "sha256_run1": "a33950771b99f7305106fb356720e7da6a8f6225e29f47cf1a00fc61f3bf0d18",
    "sha256_run2": "a33950771b99f7305106fb356720e7da6a8f6225e29f47cf1a00fc61f3bf0d18",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "ground_truth/ground_truth.csv",
    "rows": 65,
    "sha256_run1": "c9dd3f170df20891d1eb387ded8aeab24de02139af4cf0e3f07a221d588fd641",
    "sha256_run2": "c9dd3f170df20891d1eb387ded8aeab24de02139af4cf0e3f07a221d588fd641",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "ground_truth/ground_truth.json",
    "rows": 65,
    "sha256_run1": "c60c059117b829924b364d79b3c034e8c7ac4218aded1cba9965a48190ee6dd2",
    "sha256_run2": "c60c059117b829924b364d79b3c034e8c7ac4218aded1cba9965a48190ee6dd2",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/approval.json",
    "rows": 1978,
    "sha256_run1": "f72414d0a1e454b8a78fb126c19d004ad510e65a029f2e9be10082bda3ef427a",
    "sha256_run2": "f72414d0a1e454b8a78fb126c19d004ad510e65a029f2e9be10082bda3ef427a",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/budget.json",
    "rows": 33,
    "sha256_run1": "d5492e19ae8971eee8e5258348478c7baa32bc5849f2b9932a2d217043282917",
    "sha256_run2": "d5492e19ae8971eee8e5258348478c7baa32bc5849f2b9932a2d217043282917",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/budget_balance.json",
    "rows": 33,
    "sha256_run1": "fbfa0f85375b7345f0fe99d22eb69fd59e744c3597b36c73de3292b293cbd502",
    "sha256_run2": "fbfa0f85375b7345f0fe99d22eb69fd59e744c3597b36c73de3292b293cbd502",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/budget_transaction.json",
    "rows": 3808,
    "sha256_run1": "0e23defb770c04c8822221d339ea461b538c3df8ba9210d9b26ef38f4306e41d",
    "sha256_run2": "0e23defb770c04c8822221d339ea461b538c3df8ba9210d9b26ef38f4306e41d",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/delivery.json",
    "rows": 1076,
    "sha256_run1": "ec9975754fee9a3f528ee022b90fe113b021fddaa2d1a71cc5355c182a7206ba",
    "sha256_run2": "ec9975754fee9a3f528ee022b90fe113b021fddaa2d1a71cc5355c182a7206ba",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/delivery_line.json",
    "rows": 2049,
    "sha256_run1": "f53cdf72aee40fdd46489b3461b7dd9d71be5bc400e869c8b29f451ae2e1dda6",
    "sha256_run2": "f53cdf72aee40fdd46489b3461b7dd9d71be5bc400e869c8b29f451ae2e1dda6",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/department.json",
    "rows": 16,
    "sha256_run1": "7443f662136780f2ef72d89329f1ea34ae5549ca2e0c741502f7989fa72f5463",
    "sha256_run2": "7443f662136780f2ef72d89329f1ea34ae5549ca2e0c741502f7989fa72f5463",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/exception_register.json",
    "rows": 954,
    "sha256_run1": "72478755411f2946951bbeaaa6898e3094fe78114682e4aab5bcf02cde100d13",
    "sha256_run2": "72478755411f2946951bbeaaa6898e3094fe78114682e4aab5bcf02cde100d13",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/fx_rate.json",
    "rows": 84,
    "sha256_run1": "41cb7f2054a30eeb27023f4bd7ece1000bb84bfa86e85c21d69f5f2136bfcc1f",
    "sha256_run2": "41cb7f2054a30eeb27023f4bd7ece1000bb84bfa86e85c21d69f5f2136bfcc1f",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/item.json",
    "rows": 172,
    "sha256_run1": "c32eebb9ef1b78f2ef85072cd30f7e51ec0b0151d8c5bfeeb6817885edebb751",
    "sha256_run2": "c32eebb9ef1b78f2ef85072cd30f7e51ec0b0151d8c5bfeeb6817885edebb751",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/item_category.json",
    "rows": 14,
    "sha256_run1": "f7bd4898885421da374d28817285fade2869f06eefdafa40ff4685c61692412f",
    "sha256_run2": "f7bd4898885421da374d28817285fade2869f06eefdafa40ff4685c61692412f",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/po_line.json",
    "rows": 1841,
    "sha256_run1": "b7c28838304034f88c75cb0afe6c67ec0a6e1038c5aaa85bcfeada3610dc45c2",
    "sha256_run2": "b7c28838304034f88c75cb0afe6c67ec0a6e1038c5aaa85bcfeada3610dc45c2",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/purchase_order.json",
    "rows": 918,
    "sha256_run1": "315a4a902c353627b1aa24dfd44e1f5b98ae92f6258484b3860e4dcfb0986ce4",
    "sha256_run2": "315a4a902c353627b1aa24dfd44e1f5b98ae92f6258484b3860e4dcfb0986ce4",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/purchase_request.json",
    "rows": 1200,
    "sha256_run1": "4ecfe6140f1ba11bb8fee604bfd8c432fb13aac8ba3761f83afbd743ec47a8a9",
    "sha256_run2": "4ecfe6140f1ba11bb8fee604bfd8c432fb13aac8ba3761f83afbd743ec47a8a9",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/quote_evaluation.json",
    "rows": 1404,
    "sha256_run1": "17a37b35e8a43122e36b1df12ff01d872750c73d4418a4dd5fedde33b041f8f7",
    "sha256_run2": "17a37b35e8a43122e36b1df12ff01d872750c73d4418a4dd5fedde33b041f8f7",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/quote_line.json",
    "rows": 2665,
    "sha256_run1": "a30116151814d3f953b4a0b94f0bef18220ba4eb2a563a96eb7bb9da78107940",
    "sha256_run2": "a30116151814d3f953b4a0b94f0bef18220ba4eb2a563a96eb7bb9da78107940",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/request_line.json",
    "rows": 2195,
    "sha256_run1": "3e34bdf67cb4e73e0af88051672b6187703a5ddaffc416d53bcbb90bddc33821",
    "sha256_run2": "3e34bdf67cb4e73e0af88051672b6187703a5ddaffc416d53bcbb90bddc33821",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/requester.json",
    "rows": 300,
    "sha256_run1": "99d6a0666ba4aa05a61f38a967e297c073105f7e922ee0d179d563fd185ffbf8",
    "sha256_run2": "99d6a0666ba4aa05a61f38a967e297c073105f7e922ee0d179d563fd185ffbf8",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/rfq.json",
    "rows": 500,
    "sha256_run1": "544615782b5470cc3eb2545a5a240d58ef1a8a1a8003b6326b0d32e3f8186adc",
    "sha256_run2": "544615782b5470cc3eb2545a5a240d58ef1a8a1a8003b6326b0d32e3f8186adc",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/rfq_award.json",
    "rows": 455,
    "sha256_run1": "5b4bdc4e5bce41223001883dbc05d075b4f63852753c46b5da104ad91bb1fdf5",
    "sha256_run2": "5b4bdc4e5bce41223001883dbc05d075b4f63852753c46b5da104ad91bb1fdf5",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/rfq_supplier.json",
    "rows": 2354,
    "sha256_run1": "fa760f926af0e54fecb8cfa779a52305efd20b4c6cfc78c847ca095309e2e39f",
    "sha256_run2": "fa760f926af0e54fecb8cfa779a52305efd20b4c6cfc78c847ca095309e2e39f",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/status_event.json",
    "rows": 13479,
    "sha256_run1": "e79f32d6c71e7dc63fed6142044a9a978ff3d54f82930c43cb211ce01b423e46",
    "sha256_run2": "e79f32d6c71e7dc63fed6142044a9a978ff3d54f82930c43cb211ce01b423e46",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/supplier.json",
    "rows": 120,
    "sha256_run1": "09f019707f2e6279fd9d08319834201646a4037b7579bb9d9529c43cb725303e",
    "sha256_run2": "09f019707f2e6279fd9d08319834201646a4037b7579bb9d9529c43cb725303e",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/supplier_category.json",
    "rows": 210,
    "sha256_run1": "a727a6e5b04ce35fdc59d5ed53d8042a77db2a301240dd09a7cb71c11eaf7a00",
    "sha256_run2": "a727a6e5b04ce35fdc59d5ed53d8042a77db2a301240dd09a7cb71c11eaf7a00",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/supplier_quote.json",
    "rows": 1500,
    "sha256_run1": "1904f48f48a50c8c2e887c6e3522ec03202c97dae6ad419bea53a3fa88500ab7",
    "sha256_run2": "1904f48f48a50c8c2e887c6e3522ec03202c97dae6ad419bea53a3fa88500ab7",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/supplier_risk_flag.json",
    "rows": 41,
    "sha256_run1": "c2a93857e10e64656ec9a603fcc052dcb12173ab9c76b7ad2326f1cf51ecc2ff",
    "sha256_run2": "c2a93857e10e64656ec9a603fcc052dcb12173ab9c76b7ad2326f1cf51ecc2ff",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "json/supplier_status_history.json",
    "rows": 141,
    "sha256_run1": "3ac4080a4fa23da52c180340e196b1d354d92b3567668d6b9605e8756946d8c6",
    "sha256_run2": "3ac4080a4fa23da52c180340e196b1d354d92b3567668d6b9605e8756946d8c6",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "sql/schema.sql",
    "rows": null,
    "sha256_run1": "5200968179a253d3ed4417ae5dd2475ed63ad0e88b2eadd74c2168f002b36950",
    "sha256_run2": "5200968179a253d3ed4417ae5dd2475ed63ad0e88b2eadd74c2168f002b36950",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   },
   {
    "path": "sql/seed.sql",
    "rows": 39540,
    "sha256_run1": "47d60b697c68378e8dccbf42b59854e64ae734273ed6d2e780fafeb75c173a35",
    "sha256_run2": "47d60b697c68378e8dccbf42b59854e64ae734273ed6d2e780fafeb75c173a35",
-   "identical": true
+   "identical": true,
+   "shipped_identical": true
   }
  ]
 }

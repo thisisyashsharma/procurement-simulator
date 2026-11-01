@@ -61,7 +61,7 @@ validate every ID column against its pattern.
 | 7 | Separate `ground_truth.csv/json`, no leakage | `data/<scale>/ground_truth/`; 3 `ground_truth` checks | ✅ |
 | 8 | Validation: PK, FK, enums, date order, arithmetic, lifecycle, duplicates | Section 7 below | ✅ |
 | 9 | CSV/JSON/SQL + README, dictionary, command, seed, manifest, validation summary | `data/<scale>/{csv,json,sql}`, README, `manifest.json` (seed, command, rules, params, row counts, SHA-256, provenance), `reports/validation_summary.md` | ✅ |
-| 10 | Regenerate twice, compare counts and checksums | `reports/reproducibility.md`: 58 files identical | ✅ |
+| 10 | Regenerate twice, compare counts and checksums | `reports/reproducibility.md`: 58 files identical across the two runs and to the shipped copy; Python version and platform recorded | ✅ |
 
 ## 5. Volume and coverage
 
@@ -187,9 +187,9 @@ the clean baseline. The 100% precision and recall shows the labels and data agre
 benchmark of a learned detector.
 
 ### (g) Reproducibility, documentation and lawful provenance
-- **Reproducibility**: fixed seed 20261022; per-entity random streams; byte-identical output across two runs (`reports/reproducibility.md`, 58 files).
+- **Reproducibility**: fixed seed 20261022; per-entity random streams; byte-identical output across two runs, and identical to the shipped files by both the manifest checksums and the bytes on disk (`reports/reproducibility.md`, 58 files, with the Python version and platform of the run).
 - **Documentation**: README, [HOW_TO_RUN.md](HOW_TO_RUN.md), [pipeline.md](pipeline.md), [business_rules.md](business_rules.md), [erd.md](erd.md), [data_dictionary.md](data_dictionary.md), `manifest.json`.
-- **Provenance**: fully synthetic, no external data. Names are random combinations of generic words, e-mail addresses use `example.com`, and FX rates are a synthetic random walk. Recorded in the `provenance` block of `manifest.json`; MIT licence.
+- **Provenance**: fully synthetic, no external data. Names are random combinations of generic words, e-mail addresses use `example.com`, and FX rates are a synthetic random walk. Recorded in the `provenance` block of `manifest.json`, which lists each external-source field from the brief (source URL, dataset version, retrieval date, licence/terms, attribution, transformations, fields discarded) as not applicable; MIT licence.
 
 ## 9. Primary actors
 

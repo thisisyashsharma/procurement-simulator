@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import platform
 import shutil
 import sys
 import tempfile
@@ -10,7 +11,7 @@ from pathlib import Path
 
 from . import controls, docs, metrics, validate
 from .config import DEFAULT_SEED, SCALES, RunConfig
-from .export import export, write_csv
+from .export import export, sha256, write_csv
 from .generator import generate
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -57,27 +58,67 @@ def cmd_validate(data: Path, quiet: bool = False) -> bool:
     return rep.ok
 
 
-def cmd_reproduce(scale: str, seed: int, out: Path) -> bool:
+def _shipped_checksums(shipped: Path | None, seed: int) -> tuple[dict | None, str]:
+    """path -> (SHA-256 listed in the shipped manifest, SHA-256 of the shipped bytes), or None and why."""
+    if shipped is None or not (shipped / "manifest.json").exists():
+        return None, "no shipped manifest found"
+    manifest = json.loads((shipped / "manifest.json").read_text(encoding="utf-8"))
+    if manifest["seed"] != seed:
+        return None, f"shipped data was generated with seed {manifest['seed']}"
+    return {f["path"]: (f["sha256"], sha256(shipped / f["path"]) if (shipped / f["path"]).exists() else None)
+            for f in manifest["files"]}, ""
+
+
+def _label(path: Path) -> str:
+    try:
+        return path.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        return str(path)
+
+
+def cmd_reproduce(scale: str, seed: int, out: Path, shipped: Path | None = None) -> bool:
+    """Generate twice and compare every file; also compare run 1 with the shipped copy when it has this seed."""
     runs = []
     with tempfile.TemporaryDirectory() as tmp:
         for i in (1, 2):
             m = cmd_generate(scale, seed, Path(tmp) / f"run{i}", quiet=True)
             runs.append({f["path"]: (f["rows"], f["sha256"]) for f in m["files"]})
     same = runs[0] == runs[1]
+    ship, why = _shipped_checksums(shipped, seed)
     rows = [{"path": p, "rows": runs[0][p][0], "sha256_run1": runs[0][p][1], "sha256_run2": runs[1][p][1],
-             "identical": runs[0][p] == runs[1].get(p)} for p in sorted(runs[0])]
+             "identical": runs[0][p] == runs[1].get(p),
+             "shipped_identical": None if ship is None else ship.get(p) == (runs[0][p][1], runs[0][p][1])}
+            for p in sorted(runs[0])]
+    shipped_ok = None if ship is None else set(ship) == set(runs[0]) and all(r["shipped_identical"] for r in rows)
+    n_shipped = sum(1 for r in rows if r["shipped_identical"])
+    label = _label(shipped) if shipped else None
+    env = {"python_version": platform.python_version(), "platform": platform.platform(terse=True)}
     out.mkdir(parents=True, exist_ok=True)
-    (out / "reproducibility.json").write_text(json.dumps({"scale": scale, "seed": seed, "identical": same,
-                                                          "files": rows}, indent=1) + "\n", encoding="utf-8", newline="")
+    (out / "reproducibility.json").write_text(json.dumps({
+        "scale": scale, "seed": seed, "identical": same, **env, "shipped_dir": label,
+        "shipped_identical": shipped_ok, "shipped_not_compared_reason": why or None, "files": rows},
+        indent=1) + "\n", encoding="utf-8", newline="")
+    if ship is None:
+        verdict = f"not compared ({why})"
+    elif shipped_ok:
+        verdict = ("**identical**: every file matches run 1, both by the SHA-256 listed in `manifest.json` "
+                   "and by the bytes on disk")
+    else:
+        verdict = f"**MISMATCH** in {len(rows) - n_shipped} of {len(rows)} files"
     lines = [f"# Reproducibility check - {scale}, seed {seed}", "",
              f"Generated the dataset twice in separate folders with the same seed. "
              f"**{'All files identical' if same else 'MISMATCH'}** ({len(rows)} files compared by row count and SHA-256).", "",
-             "| File | Rows | SHA-256 (run 1) | Same in run 2 |", "|---|---:|---|:-:|"]
+             f"Shipped copy (`{label}`): {verdict}." if shipped else "Shipped copy: not compared.", "",
+             f"Environment: Python {env['python_version']} on {env['platform']}.", "",
+             "| File | Rows | SHA-256 (run 1) | Same in run 2 | Same as shipped |", "|---|---:|---|:-:|:-:|"]
     lines += [f"| {r['path']} | {r['rows'] if r['rows'] is not None else ''} | `{r['sha256_run1'][:16]}...` | "
-              f"{'yes' if r['identical'] else '**no**'} |" for r in rows]
+              f"{'yes' if r['identical'] else '**no**'} | "
+              f"{'n/a' if r['shipped_identical'] is None else 'yes' if r['shipped_identical'] else '**no**'} |" for r in rows]
     (out / "reproducibility.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="")
     print(f"reproducibility {scale}: {'identical' if same else 'MISMATCH'} across {len(rows)} files")
-    return same
+    print(f"  shipped {label} matches: {n_shipped}/{len(rows)} files" if ship is not None
+          else f"  shipped copy not compared: {why}")
+    return same and shipped_ok is not False
 
 
 def main(argv=None) -> int:
@@ -103,7 +144,8 @@ def main(argv=None) -> int:
     if args.cmd == "validate":
         return 0 if cmd_validate(args.data) else 1
     if args.cmd == "reproduce":
-        return 0 if cmd_reproduce(args.scale, args.seed, ROOT / "data" / args.scale / "reports") else 1
+        shipped = ROOT / "data" / args.scale
+        return 0 if cmd_reproduce(args.scale, args.seed, shipped / "reports", shipped) else 1
     if args.cmd == "docs":
         docs.write_data_dictionary(ROOT / "docs" / "data_dictionary.md")
         return 0
@@ -112,7 +154,7 @@ def main(argv=None) -> int:
         out = ROOT / "data" / scale
         cmd_generate(scale, args.seed, out)
         ok &= cmd_validate(out)
-        ok &= cmd_reproduce(scale, args.seed, out / "reports")
+        ok &= cmd_reproduce(scale, args.seed, out / "reports", out)
     docs.write_data_dictionary(ROOT / "docs" / "data_dictionary.md")
     return 0 if ok else 1
 

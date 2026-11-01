@@ -2,14 +2,15 @@
 from __future__ import annotations
 
 import json
+import shutil
 from collections import Counter
 from pathlib import Path
 
 import pytest
 
-from procurement_synth import controls, validate
+from procurement_synth import cli, controls, validate
 from procurement_synth.anomalies import SPECS
-from procurement_synth.config import SCALES, RunConfig
+from procurement_synth.config import DEFAULT_SEED, SCALES, RunConfig
 from procurement_synth.export import export
 from procurement_synth.generator import generate
 
@@ -55,6 +56,31 @@ def test_different_seed_changes_data(tmp_path, starter):
     _, _, first = starter
     other = export(generate(RunConfig(seed=7, scale=SCALES["starter"])), tmp_path)
     assert {f["sha256"] for f in first["files"]} != {f["sha256"] for f in other["files"]}
+
+
+def test_manifest_lists_provenance_fields(starter):
+    _, _, manifest = starter
+    prov = manifest["provenance"]
+    assert prov["external_data"] == []
+    for key in ("source_url", "dataset_version", "retrieval_date", "source_license_terms", "attribution",
+                "transformations", "fields_discarded", "schema_inspiration", "license"):
+        assert prov[key], key
+
+
+def test_reproduce_matches_shipped_copy(tmp_path, starter):
+    _, out, _ = starter
+    assert cli.cmd_reproduce("starter", DEFAULT_SEED, tmp_path / "ok", shipped=out)
+    assert json.loads((tmp_path / "ok" / "reproducibility.json").read_text())["shipped_identical"] is True
+    tampered = tmp_path / "tampered"
+    shutil.copytree(out, tampered)                # the shared fixture stays untouched
+    target = tampered / "csv" / "department.csv"
+    data = bytearray(target.read_bytes())
+    data[-2] = ord("X") if data[-2] != ord("X") else ord("Y")
+    target.write_bytes(bytes(data))
+    assert not cli.cmd_reproduce("starter", DEFAULT_SEED, tmp_path / "bad", shipped=tampered)
+    report = json.loads((tmp_path / "bad" / "reproducibility.json").read_text())
+    assert report["shipped_identical"] is False
+    assert [f["path"] for f in report["files"] if not f["shipped_identical"]] == ["csv/department.csv"]
 
 
 def test_ground_truth_lives_outside_input_folders(starter):
