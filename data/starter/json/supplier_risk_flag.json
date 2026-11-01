@@ -1,0 +1,18 @@
+[
+{"risk_flag_id": "SRF-000001", "supplier_id": "SUP0035", "flag_type": "ESG_CONCERN", "severity": "HIGH", "raised_date": "2025-10-04", "cleared_date": "2026-01-20", "source": "NEWS_MONITORING"},
+{"risk_flag_id": "SRF-000002", "supplier_id": "SUP0010", "flag_type": "DELIVERY_PERFORMANCE", "severity": "LOW", "raised_date": "2025-10-06", "cleared_date": "2026-02-14", "source": "SUPPLIER_SCORECARD"},
+{"risk_flag_id": "SRF-000003", "supplier_id": "SUP0035", "flag_type": "FINANCIAL_DISTRESS", "severity": "LOW", "raised_date": "2025-10-10", "cleared_date": "2026-03-06", "source": "CREDIT_MONITORING"},
+{"risk_flag_id": "SRF-000004", "supplier_id": "SUP0023", "flag_type": "SANCTIONS_SCREENING_HIT", "severity": "HIGH", "raised_date": "2025-10-23", "cleared_date": "2026-02-01", "source": "SANCTIONS_SCREENING"},
+{"risk_flag_id": "SRF-000005", "supplier_id": "SUP0006", "flag_type": "DELIVERY_PERFORMANCE", "severity": "LOW", "raised_date": "2025-11-25", "cleared_date": "2026-03-07", "source": "SUPPLIER_SCORECARD"},
+{"risk_flag_id": "SRF-000006", "supplier_id": "SUP0014", "flag_type": "DELIVERY_PERFORMANCE", "severity": "LOW", "raised_date": "2025-12-20", "cleared_date": "2026-03-12", "source": "SUPPLIER_SCORECARD"},
+{"risk_flag_id": "SRF-000007", "supplier_id": "SUP0004", "flag_type": "QUALITY_ISSUE", "severity": "HIGH", "raised_date": "2025-12-29", "cleared_date": "2026-03-31", "source": "QUALITY_AUDIT"},
+{"risk_flag_id": "SRF-000008", "supplier_id": "SUP0028", "flag_type": "ESG_CONCERN", "severity": "MEDIUM", "raised_date": "2026-01-13", "cleared_date": "2026-03-19", "source": "NEWS_MONITORING"},
+{"risk_flag_id": "SRF-000009", "supplier_id": "SUP0018", "flag_type": "DELIVERY_PERFORMANCE", "severity": "LOW", "raised_date": "2026-02-07", "cleared_date": "2026-06-23", "source": "SUPPLIER_SCORECARD"},
+{"risk_flag_id": "SRF-000010", "supplier_id": "SUP0018", "flag_type": "FINANCIAL_DISTRESS", "severity": "LOW", "raised_date": "2026-02-18", "cleared_date": "2026-05-08", "source": "CREDIT_MONITORING"},
+{"risk_flag_id": "SRF-000011", "supplier_id": "SUP0032", "flag_type": "DELIVERY_PERFORMANCE", "severity": "LOW", "raised_date": "2026-02-26", "cleared_date": "2026-06-16", "source": "SUPPLIER_SCORECARD"},
+{"risk_flag_id": "SRF-000012", "supplier_id": "SUP0030", "flag_type": "DELIVERY_PERFORMANCE", "severity": "MEDIUM", "raised_date": "2026-07-12", "cleared_date": "2026-10-15", "source": "SUPPLIER_SCORECARD"},
+{"risk_flag_id": "SRF-000013", "supplier_id": "SUP0014", "flag_type": "DELIVERY_PERFORMANCE", "severity": "LOW", "raised_date": "2026-07-22", "cleared_date": "2026-10-18", "source": "SUPPLIER_SCORECARD"},
+{"risk_flag_id": "SRF-000014", "supplier_id": "SUP0028", "flag_type": "QUALITY_ISSUE", "severity": "MEDIUM", "raised_date": "2026-07-29", "cleared_date": null, "source": "QUALITY_AUDIT"},
+{"risk_flag_id": "SRF-000015", "supplier_id": "SUP0001", "flag_type": "DELIVERY_PERFORMANCE", "severity": "HIGH", "raised_date": "2026-08-21", "cleared_date": "2026-09-17", "source": "SUPPLIER_SCORECARD"},
+{"risk_flag_id": "SRF-000016", "supplier_id": "SUP0036", "flag_type": "FINANCIAL_DISTRESS", "severity": "MEDIUM", "raised_date": "2026-09-25", "cleared_date": null, "source": "CREDIT_MONITORING"}
+]

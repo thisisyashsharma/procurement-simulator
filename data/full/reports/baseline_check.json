@@ -1,0 +1,40 @@
+{
+  "description": "Same seed and scale generated with anomaly injection switched off; the control checks must find nothing.",
+  "rows": {
+    "department": 16,
+    "requester": 300,
+    "item_category": 14,
+    "supplier": 120,
+    "item": 172,
+    "supplier_category": 210,
+    "supplier_status_history": 141,
+    "supplier_risk_flag": 41,
+    "fx_rate": 84,
+    "budget": 33,
+    "purchase_request": 1172,
+    "request_line": 2157,
+    "rfq": 500,
+    "rfq_supplier": 2354,
+    "supplier_quote": 1500,
+    "quote_line": 2665,
+    "quote_evaluation": 1404,
+    "rfq_award": 455,
+    "approval": 1941,
+    "purchase_order": 908,
+    "po_line": 1796,
+    "delivery": 1054,
+    "delivery_line": 1983,
+    "budget_transaction": 3733,
+    "budget_balance": 33,
+    "status_event": 13299,
+    "exception_register": 924
+  },
+  "control_findings": 0,
+  "illegal_transitions": 0,
+  "anomaly_opportunities_counted": {
+    "PO_WITHOUT_APPROVAL": 1086,
+    "BUDGET_OVERRUN": 41,
+    "INACTIVE_SUPPLIER": 92,
+    "QUOTE_CURRENCY_MISMATCH": 17
+  }
+}

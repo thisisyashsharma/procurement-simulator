@@ -1,0 +1,37 @@
+supplier_id,supplier_name,country_code,currency_code,supplier_tier,payment_terms,default_incoterm,onboarded_date,status,risk_rating,contact_email
+SUP0001,Trident Scientific Instruments LLC,US,USD,APPROVED,NET30,DDP,2017-06-30,ACTIVE,NONE,rfq.sup0001@example.com
+SUP0002,Coldwater Safety Products Inc.,US,USD,PREFERRED,NET30,DAP,2015-05-30,INACTIVE,NONE,rfq.sup0002@example.com
+SUP0003,Copperfield Facility Services Corp.,US,USD,APPROVED,NET30,DAP,2025-05-24,ACTIVE,NONE,rfq.sup0003@example.com
+SUP0004,Bramblecote Furniture Works Corp.,US,USD,PREFERRED,NET30,DDP,2022-08-19,ACTIVE,NONE,rfq.sup0004@example.com
+SUP0005,Wexford Freight Logistics LLC,US,USD,APPROVED,NET30,DAP,2020-05-14,ACTIVE,NONE,rfq.sup0005@example.com
+SUP0006,Riverstone Consulting Group Corp.,US,USD,PREFERRED,NET30,DAP,2017-12-11,ACTIVE,NONE,rfq.sup0006@example.com
+SUP0007,Silverline Materials LLC,US,USD,APPROVED,NET60,DAP,2018-11-09,ACTIVE,NONE,rfq.sup0007@example.com
+SUP0008,Willowmere Creative Studio LLC,US,USD,APPROVED,NET45,DAP,2022-11-28,ACTIVE,NONE,rfq.sup0008@example.com
+SUP0009,Amberline Technology Distribution LLC,US,USD,APPROVED,NET30,DDP,2025-08-04,ACTIVE,NONE,rfq.sup0009@example.com
+SUP0010,Meridian Packaging LLC,US,USD,APPROVED,NET45,DDP,2019-02-04,ACTIVE,NONE,rfq.sup0010@example.com
+SUP0011,Cobaltis Industrial Supply Inc.,US,USD,PREFERRED,NET30,DAP,2015-10-21,INACTIVE,NONE,rfq.sup0011@example.com
+SUP0012,Pinecrest Electrical Components Inc.,US,USD,APPROVED,NET45,DDP,2018-03-27,ACTIVE,NONE,rfq.sup0012@example.com
+SUP0013,Foxhollow Office Supply Inc.,US,USD,STRATEGIC,NET60,DAP,2018-04-29,ACTIVE,NONE,rfq.sup0013@example.com
+SUP0014,Bluefield Software Solutions LLC,US,USD,STRATEGIC,NET30,DDP,2014-08-04,ACTIVE,NONE,rfq.sup0014@example.com
+SUP0015,Marlowe Scientific Instruments GmbH,DE,EUR,APPROVED,NET45,DAP,2015-09-01,ACTIVE,NONE,rfq.sup0015@example.com
+SUP0016,Orionis Safety Products Ltd,GB,GBP,PREFERRED,NET45,FCA,2017-11-08,ACTIVE,NONE,rfq.sup0016@example.com
+SUP0017,Oakhurst Facility Services Corp.,US,USD,APPROVED,NET45,DAP,2023-06-27,ACTIVE,NONE,rfq.sup0017@example.com
+SUP0018,Tamarack Furniture Works Inc.,CA,CAD,APPROVED,NET30,FCA,2020-09-23,ACTIVE,NONE,rfq.sup0018@example.com
+SUP0019,Larkspur Freight Logistics Inc.,US,USD,APPROVED,NET60,DDP,2023-04-28,ACTIVE,NONE,rfq.sup0019@example.com
+SUP0020,Bramblecote Consulting Group Inc.,US,USD,PREFERRED,NET30,DAP,2019-01-31,ACTIVE,NONE,rfq.sup0020@example.com
+SUP0021,Pinecrest Materials AG,DE,EUR,APPROVED,NET45,FCA,2025-01-19,ACTIVE,NONE,rfq.sup0021@example.com
+SUP0022,Evergreen Creative Studio Corp.,US,USD,APPROVED,NET30,DDP,2015-04-17,ACTIVE,NONE,rfq.sup0022@example.com
+SUP0023,Cobaltis Technology Distribution S.A. de C.V.,MX,MXN,PREFERRED,NET60,FOB,2019-09-18,ACTIVE,NONE,rfq.sup0023@example.com
+SUP0024,Netherby Packaging PLC,GB,GBP,PREFERRED,NET60,FOB,2018-05-19,ACTIVE,NONE,rfq.sup0024@example.com
+SUP0025,Wexford Industrial Supply Inc.,CA,CAD,APPROVED,NET60,EXW,2024-12-13,ACTIVE,NONE,rfq.sup0025@example.com
+SUP0026,Amberline Electrical Components Corp.,US,USD,PREFERRED,NET60,DDP,2019-03-01,ACTIVE,NONE,rfq.sup0026@example.com
+SUP0027,Dunmore Office Supply S.A. de C.V.,MX,MXN,APPROVED,NET45,FCA,2025-06-28,ACTIVE,NONE,rfq.sup0027@example.com
+SUP0028,Riverstone Software Solutions LLC,US,USD,STRATEGIC,NET45,DAP,2014-02-24,ACTIVE,MEDIUM,rfq.sup0028@example.com
+SUP0029,Amberline Scientific Instruments Ltd,GB,GBP,PREFERRED,NET30,FCA,2016-01-11,ACTIVE,NONE,rfq.sup0029@example.com
+SUP0030,Elmstead Safety Products Inc.,US,USD,APPROVED,NET30,DAP,2025-08-13,INACTIVE,NONE,rfq.sup0030@example.com
+SUP0031,Harborview Facility Services Inc.,US,USD,APPROVED,NET45,DDP,2017-04-13,ACTIVE,NONE,rfq.sup0031@example.com
+SUP0032,Ironbridge Furniture Works Corp.,US,USD,STRATEGIC,NET45,DDP,2014-08-31,ACTIVE,NONE,rfq.sup0032@example.com
+SUP0033,Coldwater Freight Logistics Inc.,US,USD,PREFERRED,NET45,DAP,2016-06-13,ACTIVE,NONE,rfq.sup0033@example.com
+SUP0034,Oakmont Consulting Group Corp.,US,USD,APPROVED,NET45,DDP,2023-08-23,ACTIVE,NONE,rfq.sup0034@example.com
+SUP0035,Sablewood Materials S.A. de C.V.,MX,MXN,APPROVED,NET60,FOB,2019-05-14,ACTIVE,NONE,rfq.sup0035@example.com
+SUP0036,Stonehill Creative Studio Corp.,US,USD,APPROVED,NET60,DAP,2024-04-26,ACTIVE,MEDIUM,rfq.sup0036@example.com

@@ -1,0 +1,18 @@
+[
+{"department_id": "DEPT-001", "department_name": "Executive Office", "cost_center": "CC-1100", "division": "CORPORATE", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-002", "department_name": "Finance", "cost_center": "CC-1200", "division": "CORPORATE", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-003", "department_name": "Human Resources", "cost_center": "CC-1300", "division": "CORPORATE", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-004", "department_name": "Legal & Compliance", "cost_center": "CC-1400", "division": "CORPORATE", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-005", "department_name": "Procurement", "cost_center": "CC-1500", "division": "CORPORATE", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-006", "department_name": "IT Infrastructure", "cost_center": "CC-1600", "division": "TECHNOLOGY", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-007", "department_name": "Software Engineering", "cost_center": "CC-1700", "division": "TECHNOLOGY", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-008", "department_name": "Research & Development", "cost_center": "CC-1800", "division": "TECHNOLOGY", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-009", "department_name": "Manufacturing", "cost_center": "CC-1900", "division": "OPERATIONS", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-010", "department_name": "Quality Assurance", "cost_center": "CC-2000", "division": "OPERATIONS", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-011", "department_name": "Logistics & Warehousing", "cost_center": "CC-2100", "division": "OPERATIONS", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-012", "department_name": "Facilities", "cost_center": "CC-2200", "division": "OPERATIONS", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-013", "department_name": "Marketing", "cost_center": "CC-2300", "division": "COMMERCIAL", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-014", "department_name": "Sales", "cost_center": "CC-2400", "division": "COMMERCIAL", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-015", "department_name": "Customer Support", "cost_center": "CC-2500", "division": "COMMERCIAL", "status": "ACTIVE", "effective_from": "2018-01-01"},
+{"department_id": "DEPT-016", "department_name": "Health, Safety & Environment", "cost_center": "CC-2600", "division": "OPERATIONS", "status": "ACTIVE", "effective_from": "2018-01-01"}
+]

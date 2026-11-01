@@ -1,0 +1,15 @@
+category_code,category_name,budget_type,is_service,import_duty_rate,standard_lead_time_days
+ELEC,Electrical Components,OPEX,false,0.0250,12
+FAC_SVC,Facilities Services,OPEX,true,0.0000,7
+FURN,Furniture & Fixtures,CAPEX,false,0.0400,21
+IT_HW,IT Hardware,CAPEX,false,0.0200,10
+LAB_EQ,Laboratory Equipment,CAPEX,false,0.0350,30
+LOG_SVC,Logistics & Freight Services,OPEX,true,0.0000,5
+MKT_SVC,Marketing & Print Services,OPEX,true,0.0000,14
+MRO,MRO & Spare Parts,OPEX,false,0.0300,7
+OFF_SUP,Office Supplies,OPEX,false,0.0300,4
+PACK,Packaging Materials,OPEX,false,0.0450,10
+PRO_SVC,Professional Services,OPEX,true,0.0000,10
+RAW_MAT,Raw Materials,OPEX,false,0.0500,14
+SAFETY,Safety & PPE,OPEX,false,0.0350,6
+SW_LIC,Software & SaaS Licences,OPEX,true,0.0000,3

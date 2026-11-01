@@ -1,0 +1,4928 @@
+{
+ "passed": true,
+ "checks": [
+  {
+   "category": "primary_key",
+   "check": "department: PK ('department_id',) unique and not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "department.department_id not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "department.department_id matches DEPT-\\d{3}",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "department.department_id unique",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "department.department_name not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "department.department_name unique",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "department.cost_center not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "department.cost_center matches CC-\\d{4}",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "department.cost_center unique",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "department.division not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "department.division in allowed values",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "department.status not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "department.status in allowed values",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "department.effective_from not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "requester: PK ('requester_id',) unique and not null",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "requester.requester_id not null",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "requester.requester_id matches EMP-\\d{5}",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "requester.requester_id unique",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "requester.full_name not null",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "requester.email not null",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "requester.email unique",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "requester.department_id not null",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "requester.department_id matches DEPT-\\d{3}",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "requester.department_id -> department.department_id",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "requester.job_title not null",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "requester.role not null",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "requester.role in allowed values",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "requester.manager_id matches EMP-\\d{5}",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "requester.manager_id -> requester.requester_id",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "requester.hire_date not null",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "requester.status not null",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "requester.status in allowed values",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "item_category: PK ('category_code',) unique and not null",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item_category.category_code not null",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "item_category.category_code matches [A-Z][A-Z_]+",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "item_category.category_code unique",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item_category.category_name not null",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "item_category.category_name unique",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item_category.budget_type not null",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "item_category.budget_type in allowed values",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item_category.is_service not null",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item_category.import_duty_rate not null",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item_category.standard_lead_time_days not null",
+   "checked": 14,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "supplier: PK ('supplier_id',) unique and not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.supplier_id not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "supplier.supplier_id matches SUP\\d{4}",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "supplier.supplier_id unique",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.supplier_name not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "supplier.supplier_name unique",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.country_code not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier.country_code in allowed values",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.currency_code not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier.currency_code in allowed values",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.supplier_tier not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier.supplier_tier in allowed values",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.payment_terms not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier.payment_terms in allowed values",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.default_incoterm not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier.default_incoterm in allowed values",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.onboarded_date not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.status not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier.status in allowed values",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.risk_rating not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier.risk_rating in allowed values",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier.contact_email not null",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "supplier.contact_email unique",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "item: PK ('item_id',) unique and not null",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item.item_id not null",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "item.item_id matches ITM-\\d{5}",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "item.item_id unique",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item.item_name not null",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "item.item_name unique",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item.category_code not null",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "item.category_code -> item_category.category_code",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item.uom not null",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "item.uom in allowed values",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item.list_price_usd not null",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "item.is_sole_source not null",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "item.sole_source_supplier_id matches SUP\\d{4}",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "item.sole_source_supplier_id -> supplier.supplier_id",
+   "checked": 172,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "supplier_category: PK ('supplier_id', 'category_code') unique and not null",
+   "checked": 77,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_category.supplier_id not null",
+   "checked": 77,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "supplier_category.supplier_id matches SUP\\d{4}",
+   "checked": 77,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "supplier_category.supplier_id -> supplier.supplier_id",
+   "checked": 77,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_category.category_code not null",
+   "checked": 77,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "supplier_category.category_code -> item_category.category_code",
+   "checked": 77,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier_category.preference_rank in allowed values",
+   "checked": 77,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_category.effective_from not null",
+   "checked": 77,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "supplier_status_history: PK ('status_history_id',) unique and not null",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_status_history.status_history_id not null",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "supplier_status_history.status_history_id matches SSH-\\d{6}",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "supplier_status_history.status_history_id unique",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_status_history.supplier_id not null",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "supplier_status_history.supplier_id matches SUP\\d{4}",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "supplier_status_history.supplier_id -> supplier.supplier_id",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_status_history.status not null",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier_status_history.status in allowed values",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_status_history.effective_from not null",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_status_history.reason_code not null",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier_status_history.reason_code in allowed values",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "supplier_status_history: natural key ('supplier_id', 'effective_from') unique",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "supplier_risk_flag: PK ('risk_flag_id',) unique and not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_risk_flag.risk_flag_id not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "supplier_risk_flag.risk_flag_id matches SRF-\\d{6}",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "supplier_risk_flag.risk_flag_id unique",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_risk_flag.supplier_id not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "supplier_risk_flag.supplier_id matches SUP\\d{4}",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "supplier_risk_flag.supplier_id -> supplier.supplier_id",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_risk_flag.flag_type not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier_risk_flag.flag_type in allowed values",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_risk_flag.severity not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier_risk_flag.severity in allowed values",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_risk_flag.raised_date not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_risk_flag.source not null",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier_risk_flag.source in allowed values",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "fx_rate: PK ('currency_code', 'rate_month') unique and not null",
+   "checked": 84,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "fx_rate.currency_code not null",
+   "checked": 84,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "fx_rate.currency_code in allowed values",
+   "checked": 84,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "fx_rate.rate_month not null",
+   "checked": 84,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "fx_rate.rate_month matches 2026-\\d{2}",
+   "checked": 84,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "fx_rate.usd_per_unit not null",
+   "checked": 84,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "budget: PK ('budget_id',) unique and not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget.budget_id not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "budget.budget_id matches BUD-2026-\\d{4}",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "budget.budget_id unique",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget.department_id not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "budget.department_id matches DEPT-\\d{3}",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "budget.department_id -> department.department_id",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget.fiscal_year not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "budget.fiscal_year in allowed values",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget.budget_type not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "budget.budget_type in allowed values",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget.allocated_amount_usd not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget.owner_id not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "budget.owner_id matches EMP-\\d{5}",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "budget.owner_id -> requester.requester_id",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget.effective_from not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget.effective_to not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget.status not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "budget.status in allowed values",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "budget: natural key ('department_id', 'fiscal_year', 'budget_type') unique",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "purchase_request: PK ('pr_id',) unique and not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.pr_id not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_request.pr_id matches PR-2026-\\d{6}",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "purchase_request.pr_id unique",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.requester_id not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_request.requester_id matches EMP-\\d{5}",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_request.requester_id -> requester.requester_id",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.department_id not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_request.department_id matches DEPT-\\d{3}",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_request.department_id -> department.department_id",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.budget_id not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_request.budget_id matches BUD-2026-\\d{4}",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_request.budget_id -> budget.budget_id",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.category_code not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_request.category_code -> item_category.category_code",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.submitted_at not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.need_by_date not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.priority not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_request.priority in allowed values",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.sourcing_route not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_request.sourcing_route in allowed values",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.estimated_total_usd not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_request.budget_check_result in allowed values",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_request.approval_tier in allowed values",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.status not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_request.status in allowed values",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_request.status_updated_at not null",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "request_line: PK ('pr_line_id',) unique and not null",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "request_line.pr_line_id not null",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "request_line.pr_line_id matches PR-2026-\\d{6}-L\\d{2}",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "request_line.pr_line_id unique",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "request_line.pr_id not null",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "request_line.pr_id matches PR-2026-\\d{6}",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "request_line.pr_id -> purchase_request.pr_id",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "request_line.line_no not null",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "request_line.item_id not null",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "request_line.item_id matches ITM-\\d{5}",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "request_line.item_id -> item.item_id",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "request_line.quantity not null",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "request_line.uom not null",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "request_line.uom in allowed values",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "request_line.est_unit_price_usd not null",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "request_line.est_line_total_usd not null",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "request_line: natural key ('pr_id', 'line_no') unique",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "rfq: PK ('rfq_id',) unique and not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.rfq_id not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "rfq.rfq_id matches RFQ-2026-\\d{6}",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "rfq.rfq_id unique",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.pr_id not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "rfq.pr_id matches PR-2026-\\d{6}",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "rfq.pr_id unique",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "rfq.pr_id -> purchase_request.pr_id",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.buyer_id not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "rfq.buyer_id matches EMP-\\d{5}",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "rfq.buyer_id -> requester.requester_id",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.sourcing_type not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "rfq.sourcing_type in allowed values",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "rfq.single_source_reason in allowed values",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.currency_code not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "rfq.currency_code in allowed values",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.issued_at not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.response_due_at not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.min_quotes_required not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "rfq.min_quotes_required in allowed values",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.status not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "rfq.status in allowed values",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "rfq.cancel_reason in allowed values",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq.quotes_received not null",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "rfq_supplier: PK ('rfq_id', 'supplier_id') unique and not null",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_supplier.rfq_id not null",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "rfq_supplier.rfq_id matches RFQ-2026-\\d{6}",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "rfq_supplier.rfq_id -> rfq.rfq_id",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_supplier.supplier_id not null",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "rfq_supplier.supplier_id matches SUP\\d{4}",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "rfq_supplier.supplier_id -> supplier.supplier_id",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_supplier.invited_at not null",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_supplier.response_status not null",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "rfq_supplier.response_status in allowed values",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "supplier_quote: PK ('quote_id',) unique and not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.quote_id not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "supplier_quote.quote_id matches QUO-SUP\\d{4}-2026-\\d{6}",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "supplier_quote.quote_id unique",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.rfq_id not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "supplier_quote.rfq_id matches RFQ-2026-\\d{6}",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "supplier_quote.rfq_id -> rfq.rfq_id",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.supplier_id not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "supplier_quote.supplier_id matches SUP\\d{4}",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "supplier_quote.supplier_id -> supplier.supplier_id",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.submitted_at not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.valid_until not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.currency_code not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier_quote.currency_code in allowed values",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.incoterm not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier_quote.incoterm in allowed values",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.lead_time_days not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.goods_amount not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.freight_amount not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.total_amount not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "supplier_quote.status not null",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "supplier_quote.status in allowed values",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "supplier_quote: natural key ('rfq_id', 'supplier_id') unique",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "quote_line: PK ('quote_line_id',) unique and not null",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_line.quote_line_id not null",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "quote_line.quote_line_id matches QUO-SUP\\d{4}-2026-\\d{6}-L\\d{2}",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "quote_line.quote_line_id unique",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_line.quote_id not null",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "quote_line.quote_id matches QUO-SUP\\d{4}-2026-\\d{6}",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "quote_line.quote_id -> supplier_quote.quote_id",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_line.pr_line_id not null",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "quote_line.pr_line_id matches PR-2026-\\d{6}-L\\d{2}",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "quote_line.pr_line_id -> request_line.pr_line_id",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_line.line_no not null",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_line.quantity not null",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_line.unit_price not null",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_line.line_amount not null",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "quote_line: natural key ('quote_id', 'pr_line_id') unique",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "quote_evaluation: PK ('quote_id',) unique and not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.quote_id not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "quote_evaluation.quote_id matches QUO-SUP\\d{4}-2026-\\d{6}",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "quote_evaluation.quote_id unique",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "quote_evaluation.quote_id -> supplier_quote.quote_id",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.rfq_id not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "quote_evaluation.rfq_id matches RFQ-2026-\\d{6}",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "quote_evaluation.rfq_id -> rfq.rfq_id",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.evaluated_at not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.fx_rate_used not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.goods_usd not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.freight_usd not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.duty_usd not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.landed_cost_usd not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.expected_delivery_date not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.meets_need_by not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.is_valid_at_evaluation not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.supplier_status_at_evaluation not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "quote_evaluation.supplier_status_at_evaluation in allowed values",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.supplier_risk_at_evaluation not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "quote_evaluation.supplier_risk_at_evaluation in allowed values",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "quote_evaluation.is_eligible not null",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "quote_evaluation.disqualification_reason in allowed values",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "rfq_award: PK ('rfq_id',) unique and not null",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_award.rfq_id not null",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "rfq_award.rfq_id matches RFQ-2026-\\d{6}",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "rfq_award.rfq_id unique",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "rfq_award.rfq_id -> rfq.rfq_id",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_award.quote_id not null",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "rfq_award.quote_id matches QUO-SUP\\d{4}-2026-\\d{6}",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "rfq_award.quote_id unique",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "rfq_award.quote_id -> supplier_quote.quote_id",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_award.supplier_id not null",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "rfq_award.supplier_id matches SUP\\d{4}",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "rfq_award.supplier_id -> supplier.supplier_id",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_award.buyer_id not null",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "rfq_award.buyer_id matches EMP-\\d{5}",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "rfq_award.buyer_id -> requester.requester_id",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_award.recommended_at not null",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "rfq_award.award_basis in allowed values",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_award.awarded_landed_cost_usd not null",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "rfq_award.status not null",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "rfq_award.status in allowed values",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "approval: PK ('approval_id',) unique and not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.approval_id not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "approval.approval_id matches APR-2026-\\d{6}",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "approval.approval_id unique",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.pr_id not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "approval.pr_id matches PR-2026-\\d{6}",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "approval.pr_id -> purchase_request.pr_id",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "approval.rfq_id matches RFQ-2026-\\d{6}",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "approval.rfq_id -> rfq.rfq_id",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.approval_type not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "approval.approval_type in allowed values",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.approval_level not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "approval.approval_level in allowed values",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.step_no not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.approver_id not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "approval.approver_id matches EMP-\\d{5}",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "approval.approver_id -> requester.requester_id",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.basis_amount_usd not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.rule_id not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.requested_at not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "approval.decision not null",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "approval.decision in allowed values",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "approval.decision_reason in allowed values",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "approval: natural key ('pr_id', 'rfq_id', 'approval_type', 'approval_level', 'step_no') unique",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "purchase_order: PK ('po_id',) unique and not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.po_id not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_order.po_id matches PO-2026-\\d{6}",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "purchase_order.po_id unique",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.supplier_id not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_order.supplier_id matches SUP\\d{4}",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_order.supplier_id -> supplier.supplier_id",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.department_id not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_order.department_id matches DEPT-\\d{3}",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_order.department_id -> department.department_id",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.budget_id not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_order.budget_id matches BUD-2026-\\d{4}",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_order.budget_id -> budget.budget_id",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.buyer_id not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_order.buyer_id matches EMP-\\d{5}",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_order.buyer_id -> requester.requester_id",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.source_type not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_order.source_type in allowed values",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_order.rfq_id matches RFQ-2026-\\d{6}",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_order.rfq_id -> rfq.rfq_id",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "purchase_order.quote_id matches QUO-SUP\\d{4}-2026-\\d{6}",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "purchase_order.quote_id -> supplier_quote.quote_id",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.issued_at not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.currency_code not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_order.currency_code in allowed values",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.payment_terms not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_order.payment_terms in allowed values",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.incoterm not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_order.incoterm in allowed values",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.promised_date not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.goods_amount not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.freight_amount not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.total_amount not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.fx_rate_to_usd not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.est_duty_usd not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.total_usd not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "purchase_order.status not null",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "purchase_order.status in allowed values",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "po_line: PK ('po_line_id',) unique and not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.po_line_id not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "po_line.po_line_id matches PO-2026-\\d{6}-L\\d{2}",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "po_line.po_line_id unique",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.po_id not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "po_line.po_id matches PO-2026-\\d{6}",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "po_line.po_id -> purchase_order.po_id",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.line_no not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.pr_id not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "po_line.pr_id matches PR-2026-\\d{6}",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "po_line.pr_id -> purchase_request.pr_id",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.pr_line_id not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "po_line.pr_line_id matches PR-2026-\\d{6}-L\\d{2}",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "po_line.pr_line_id unique",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "po_line.pr_line_id -> request_line.pr_line_id",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "po_line.quote_line_id matches QUO-SUP\\d{4}-2026-\\d{6}-L\\d{2}",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "po_line.quote_line_id -> quote_line.quote_line_id",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.item_id not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "po_line.item_id matches ITM-\\d{5}",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "po_line.item_id -> item.item_id",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.quantity not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.unit_price not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.line_amount not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.qty_received not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "po_line.line_status not null",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "po_line.line_status in allowed values",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "po_line: natural key ('po_id', 'line_no') unique",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "delivery: PK ('delivery_id',) unique and not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery.delivery_id not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "delivery.delivery_id matches DEL-PO-2026-\\d{6}-\\d{2}",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "delivery.delivery_id unique",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery.po_id not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "delivery.po_id matches PO-2026-\\d{6}",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "delivery.po_id -> purchase_order.po_id",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery.delivery_seq not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery.carrier not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery.delivered_at not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery.received_by not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "delivery.received_by matches EMP-\\d{5}",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "delivery.received_by -> requester.requester_id",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery.is_on_time not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery.days_late not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery.completes_po not null",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "delivery: natural key ('po_id', 'delivery_seq') unique",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "delivery_line: PK ('delivery_line_id',) unique and not null",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery_line.delivery_line_id not null",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "delivery_line.delivery_line_id matches DEL-PO-2026-\\d{6}-\\d{2}-L\\d{2}",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "delivery_line.delivery_line_id unique",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery_line.delivery_id not null",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "delivery_line.delivery_id matches DEL-PO-2026-\\d{6}-\\d{2}",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "delivery_line.delivery_id -> delivery.delivery_id",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery_line.po_line_id not null",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "delivery_line.po_line_id matches PO-2026-\\d{6}-L\\d{2}",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "delivery_line.po_line_id -> po_line.po_line_id",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery_line.qty_delivered not null",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery_line.qty_accepted not null",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "delivery_line.qty_rejected not null",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "delivery_line.rejection_reason in allowed values",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "budget_transaction: PK ('budget_txn_id',) unique and not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_transaction.budget_txn_id not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "budget_transaction.budget_txn_id matches BTX-2026-\\d{6}",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "budget_transaction.budget_txn_id unique",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_transaction.budget_id not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "budget_transaction.budget_id matches BUD-2026-\\d{4}",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "budget_transaction.budget_id -> budget.budget_id",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_transaction.txn_ts not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_transaction.txn_type not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "budget_transaction.txn_type in allowed values",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_transaction.source_type not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "budget_transaction.source_type in allowed values",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_transaction.source_id not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_transaction.allocated_delta_usd not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_transaction.reserved_delta_usd not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_transaction.committed_delta_usd not null",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "budget_balance: PK ('budget_id',) unique and not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_balance.budget_id not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "budget_balance.budget_id matches BUD-2026-\\d{4}",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "budget_balance.budget_id unique",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "budget_balance.budget_id -> budget.budget_id",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_balance.allocated_original_usd not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_balance.transfers_net_usd not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_balance.allocated_current_usd not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_balance.reserved_usd not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_balance.committed_usd not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_balance.available_usd not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "budget_balance.utilization_pct not null",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "status_event: PK ('event_id',) unique and not null",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "status_event.event_id not null",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "status_event.event_id matches EVT-2026-\\d{6}",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "status_event.event_id unique",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "status_event.entity_type not null",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "status_event.entity_type in allowed values",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "status_event.entity_id not null",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "status_event.to_status not null",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "status_event.event_ts not null",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "status_event.actor_id matches EMP-\\d{5}",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "status_event.actor_id -> requester.requester_id",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "primary_key",
+   "check": "exception_register: PK ('exception_id',) unique and not null",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "exception_register.exception_id not null",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "exception_register.exception_id matches EXC-2026-\\d{6}",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "uniqueness",
+   "check": "exception_register.exception_id unique",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "exception_register.exception_type not null",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "exception_register.exception_type in allowed values",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "exception_register.entity_type not null",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "exception_register.entity_type in allowed values",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "exception_register.entity_id not null",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "exception_register.pr_id matches PR-2026-\\d{6}",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "exception_register.pr_id -> purchase_request.pr_id",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "exception_register.raised_at not null",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "exception_register.reason_code not null",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "exception_register.reason_text not null",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "id_format",
+   "check": "exception_register.approval_id matches APR-2026-\\d{6}",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "exception_register.approval_id -> approval.approval_id",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "required",
+   "check": "exception_register.resolution not null",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "enum",
+   "check": "exception_register.resolution in allowed values",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "budget_transaction.source_id resolves for its source_type",
+   "checked": 400,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "status_event.entity_id resolves for its entity_type",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "foreign_key",
+   "check": "exception_register.entity_id resolves for its entity_type",
+   "checked": 155,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "all event timestamps <= snapshot 2026-10-30 18:00:00 (bid deadlines excepted)",
+   "checked": 4035,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "requester termination_date >= hire_date",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "requester employed on the request submission date",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "need_by_date after submission",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "RFQ issued >= request submitted; due > issued; evaluated >= due",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "quote submitted within the RFQ bid window; valid_until >= submission",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "invitation response after invitation",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "approval requested after submission (and after evaluation for awards); decided >= requested",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "PO issued after every request it fulfils (and after RFQ evaluation)",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "delivery after PO issue",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "supplier status history is contiguous (half-open intervals)",
+   "checked": 36,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "date_order",
+   "check": "risk flag cleared after raised",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "request_line total = quantity x estimated unit price",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "request estimated_total = sum of its lines",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "quote_line amount = quantity x unit price",
+   "checked": 278,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "quote goods = sum of lines; total = goods + freight",
+   "checked": 150,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "quote_evaluation recomputes (FX of quote month, duty rule, landed cost, eligibility)",
+   "checked": 147,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "landed_cost_rank is the rank among eligible quotes",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "po_line amount = quantity x unit price; quantity and item = request line",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "PO goods/total/FX/duty/total_usd recompute",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "RFQ PO lines, prices, quantities and freight equal the awarded quote lines",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "direct PO prices = list price x (1 - supplier contract discount)",
+   "checked": 60,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "po_line qty_received = sum of accepted delivery quantities; status consistent",
+   "checked": 207,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "delivery_line accepted + rejected = delivered; reason iff rejected",
+   "checked": 256,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "delivery on-time / days late / completes_po / sequence recompute",
+   "checked": 132,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "arithmetic",
+   "check": "PO status consistent with line receipt status",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "budget",
+   "check": "budget_balance = allocation + sum of ledger deltas (available = allocated - reserved - committed)",
+   "checked": 33,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "budget",
+   "check": "transfers net to zero (contingency out = department in)",
+   "checked": 1,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "budget",
+   "check": "every transfer is backed by an APPROVED budget exception of the same amount",
+   "checked": 6,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "budget",
+   "check": "reservation = estimate at submission; held while open, fully released once ordered/rejected/cancelled",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "budget",
+   "check": "after award the reservation is re-based to the awarded landed cost",
+   "checked": 48,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "budget",
+   "check": "PO commitment = total_usd, less the open balance released on short close",
+   "checked": 101,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "lifecycle",
+   "check": "every request, RFQ, quote and PO has a creation event",
+   "checked": 421,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "lifecycle",
+   "check": "event chains are continuous and time-ordered (from_status = previous to_status)",
+   "checked": 421,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "lifecycle",
+   "check": "current status (and status_updated_at) = last event",
+   "checked": 421,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "approval tier = threshold band of the approval basis (APR-T1..T4)",
+   "checked": 118,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "approval thresholds enforced: completed chains cover every level the tier requires",
+   "checked": 104,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "approvers hold the required authority and never approve their own request",
+   "checked": 181,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "approval steps are sequential (next step routed when the previous is approved)",
+   "checked": 118,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "budget exception approvals exist only for requests that failed the budget check",
+   "checked": 7,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "quotes come from invited suppliers; quotes_received = quotes = QUOTED invitations",
+   "checked": 50,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "invited suppliers serve the category and were ACTIVE without HIGH risk at issue",
+   "checked": 211,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "approved competitive awards rest on >= 3 quotes or a waiver; single source has a justification approval",
+   "checked": 41,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "every exception has a reason: decisions, cancellations, disqualifications, register rows, awards",
+   "checked": 336,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "request lines belong to the request category and use the item unit of measure",
+   "checked": 232,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "request charged to its department budget of the category budget type",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "acceptance",
+   "check": "sourcing route follows SRC-1 and an RFQ exists exactly for RFQ routes",
+   "checked": 120,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "volume",
+   "check": "requesters: 60 vs target 60 (exact)",
+   "checked": 1,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "volume",
+   "check": "suppliers: 36 vs target 36 (exact)",
+   "checked": 1,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "volume",
+   "check": "purchase_request: 120 vs target 120 (exact)",
+   "checked": 1,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "volume",
+   "check": "rfq: 50 vs target 50 (exact)",
+   "checked": 1,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "volume",
+   "check": "supplier_quote: 150 vs target 150 (exact)",
+   "checked": 1,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "volume",
+   "check": "purchase_order: 101 vs target 90 (rule outcome, tolerance 15%)",
+   "checked": 1,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "ground_truth",
+   "check": "no label-like columns in input tables",
+   "checked": 260,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "ground_truth",
+   "check": "every label references an existing record",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "ground_truth",
+   "check": "label ids unique",
+   "checked": 16,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "export",
+   "check": "JSON files have the same rows and columns as CSV",
+   "checked": 27,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "sql",
+   "check": "schema.sql + seed.sql load into SQLite with FK enforcement; counts match CSV",
+   "checked": 27,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  },
+  {
+   "category": "control",
+   "check": "BUDGET_OVERRUN: 2 detected / 2 labelled",
+   "checked": 2,
+   "failed": 0,
+   "passed": true,
+   "note": "every violation is labelled and every label is detected",
+   "examples": []
+  },
+  {
+   "category": "control",
+   "check": "DUPLICATE_REQUEST: 3 detected / 3 labelled",
+   "checked": 3,
+   "failed": 0,
+   "passed": true,
+   "note": "every violation is labelled and every label is detected",
+   "examples": []
+  },
+  {
+   "category": "control",
+   "check": "INACTIVE_SUPPLIER: 2 detected / 2 labelled",
+   "checked": 2,
+   "failed": 0,
+   "passed": true,
+   "note": "every violation is labelled and every label is detected",
+   "examples": []
+  },
+  {
+   "category": "control",
+   "check": "NON_LOWEST_AWARD_NO_RATIONALE: 2 detected / 2 labelled",
+   "checked": 2,
+   "failed": 0,
+   "passed": true,
+   "note": "every violation is labelled and every label is detected",
+   "examples": []
+  },
+  {
+   "category": "control",
+   "check": "PO_WITHOUT_APPROVAL: 2 detected / 2 labelled",
+   "checked": 2,
+   "failed": 0,
+   "passed": true,
+   "note": "every violation is labelled and every label is detected",
+   "examples": []
+  },
+  {
+   "category": "control",
+   "check": "QUOTE_CURRENCY_MISMATCH: 1 detected / 1 labelled",
+   "checked": 1,
+   "failed": 0,
+   "passed": true,
+   "note": "every violation is labelled and every label is detected",
+   "examples": []
+  },
+  {
+   "category": "control",
+   "check": "QUOTE_EXPIRED_AT_AWARD: 2 detected / 2 labelled",
+   "checked": 2,
+   "failed": 0,
+   "passed": true,
+   "note": "every violation is labelled and every label is detected",
+   "examples": []
+  },
+  {
+   "category": "control",
+   "check": "SPLIT_PURCHASE: 2 detected / 2 labelled",
+   "checked": 2,
+   "failed": 0,
+   "passed": true,
+   "note": "every violation is labelled and every label is detected",
+   "examples": []
+  },
+  {
+   "category": "control",
+   "check": "lifecycle whitelist: 2 illegal transitions, all explained by PO_WITHOUT_APPROVAL",
+   "checked": 1411,
+   "failed": 0,
+   "passed": true,
+   "note": "",
+   "examples": []
+  }
+ ]
+}

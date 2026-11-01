@@ -1,0 +1,192 @@
+{
+ "volumes": {
+  "department": 16,
+  "requester": 60,
+  "item_category": 14,
+  "supplier": 36,
+  "item": 172,
+  "supplier_category": 77,
+  "supplier_status_history": 41,
+  "supplier_risk_flag": 16,
+  "fx_rate": 84,
+  "budget": 33,
+  "purchase_request": 120,
+  "request_line": 232,
+  "rfq": 50,
+  "rfq_supplier": 211,
+  "supplier_quote": 150,
+  "quote_line": 278,
+  "quote_evaluation": 147,
+  "rfq_award": 48,
+  "approval": 181,
+  "purchase_order": 101,
+  "po_line": 207,
+  "delivery": 132,
+  "delivery_line": 256,
+  "budget_transaction": 400,
+  "budget_balance": 33,
+  "status_event": 1411,
+  "exception_register": 155
+ },
+ "requests": {
+  "status": {
+   "CANCELLED": 4,
+   "CLOSED_SHORT": 6,
+   "ORDERED": 5,
+   "PARTIALLY_RECEIVED": 2,
+   "RECEIVED": 91,
+   "REJECTED": 12
+  },
+  "pr_to_po_conversion_pct": 86.7,
+  "rejection_rate_pct": 10.0,
+  "cancellation_rate_pct": 3.3,
+  "rejection_reasons": {
+   "BUDGET_EXCEEDED": 4,
+   "INSUFFICIENT_JUSTIFICATION": 6,
+   "LOW_PRIORITY_DEFERRED": 2
+  }
+ },
+ "approvals": {
+  "steps": 181,
+  "cycle_hours_by_tier": {
+   "1": {
+    "n": 41,
+    "median": 8.6,
+    "p90": 29.3
+   },
+   "2": {
+    "n": 44,
+    "median": 26.4,
+    "p90": 95.5
+   },
+   "3": {
+    "n": 17,
+    "median": 120.2,
+    "p90": 197.8
+   },
+   "4": {
+    "n": 2,
+    "median": 306.8,
+    "p90": 306.8
+   }
+  }
+ },
+ "sourcing": {
+  "rfqs": 50,
+  "single_source_pct": 10.0,
+  "avg_quotes_competitive": 3.22,
+  "competitive_with_3plus_quotes_pct": 95.6,
+  "award_basis": {
+   "LOWEST_LANDED_COST": 42,
+   "NONE_RECORDED": 2,
+   "SOLE_SOURCE": 4
+  },
+  "awarded_lowest_landed_cost_pct": 91.7,
+  "savings_vs_estimate_pct": 13.7,
+  "quotes_expired_before_evaluation_pct": 5.4,
+  "non_usd_quotes_pct": 5.3
+ },
+ "purchase_orders": {
+  "count": 101,
+  "rfq_award": 41,
+  "direct_contract": 60,
+  "consolidated_pct": 3.0,
+  "total_committed_usd": 1733438.14,
+  "median_po_usd": 5615.7
+ },
+ "delivery": {
+  "deliveries": 132,
+  "first_delivery_on_time_pct": 66.7,
+  "otif_pct_of_closed_pos": 44.7,
+  "partial_or_short_po_pct": 29.7,
+  "short_closed_pos": 5,
+  "median_days_late_when_late": 6,
+  "quality_rejection_units_pct": 0.1
+ },
+ "budget": {
+  "over_budget_requests": 9,
+  "budget_exception_decisions": {
+   "APPROVED": 3,
+   "REJECTED": 4
+  },
+  "transfers_usd": 9421.54,
+  "utilization_median": 0.4,
+  "budgets_over_90pct": 2
+ },
+ "exceptions": {
+  "BUDGET_EXCEPTION": 7,
+  "LATE_DELIVERY": 68,
+  "PARTIAL_DELIVERY": 43,
+  "QUALITY_REJECTION": 20,
+  "QUOTE_EXPIRED": 6,
+  "SHORT_CLOSE": 5,
+  "SINGLE_SOURCE": 5,
+  "SUPPLIER_DISQUALIFIED": 1
+ },
+ "anomaly_detection": {
+  "BUDGET_OVERRUN": {
+   "labelled": 2,
+   "detected": 2,
+   "true_positive": 2,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "DUPLICATE_REQUEST": {
+   "labelled": 3,
+   "detected": 3,
+   "true_positive": 3,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "INACTIVE_SUPPLIER": {
+   "labelled": 2,
+   "detected": 2,
+   "true_positive": 2,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "NON_LOWEST_AWARD_NO_RATIONALE": {
+   "labelled": 2,
+   "detected": 2,
+   "true_positive": 2,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "PO_WITHOUT_APPROVAL": {
+   "labelled": 2,
+   "detected": 2,
+   "true_positive": 2,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "QUOTE_CURRENCY_MISMATCH": {
+   "labelled": 1,
+   "detected": 1,
+   "true_positive": 1,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "QUOTE_EXPIRED_AT_AWARD": {
+   "labelled": 2,
+   "detected": 2,
+   "true_positive": 2,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "SPLIT_PURCHASE": {
+   "labelled": 2,
+   "detected": 2,
+   "true_positive": 2,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  }
+ }
+}

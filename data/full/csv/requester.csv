@@ -1,0 +1,301 @@
+requester_id,full_name,email,department_id,job_title,role,approval_limit_usd,manager_id,hire_date,termination_date,status
+EMP-00001,Chen Olsen,chen.olsen@example.com,DEPT-001,Chief Executive Officer,CEO,5000000,,2013-01-06,,ACTIVE
+EMP-00002,Isabel Iyer,isabel.iyer@example.com,DEPT-002,Chief Financial Officer,CFO,1000000,EMP-00001,2019-08-25,,ACTIVE
+EMP-00003,Beatriz Martin,beatriz.martin@example.com,DEPT-001,VP Corporate,VP,100000,EMP-00001,2012-02-16,,ACTIVE
+EMP-00004,Valentina Quinn,valentina.quinn@example.com,DEPT-001,VP Technology,VP,100000,EMP-00001,2016-11-06,,ACTIVE
+EMP-00005,Caleb Gupta,caleb.gupta@example.com,DEPT-001,VP Operations,VP,100000,EMP-00001,2015-07-06,,ACTIVE
+EMP-00006,Aisha Jansen,aisha.jansen@example.com,DEPT-001,VP Commercial,VP,100000,EMP-00001,2016-02-18,,ACTIVE
+EMP-00007,Yara Castillo,yara.castillo@example.com,DEPT-001,Chief of Staff,DIRECTOR,25000,EMP-00001,2021-03-20,,ACTIVE
+EMP-00008,Samuel Mehta,samuel.mehta@example.com,DEPT-002,"Director, Finance",DIRECTOR,25000,EMP-00002,2014-07-29,,ACTIVE
+EMP-00009,Elijah Shah,elijah.shah@example.com,DEPT-003,"Director, Human Resources",DIRECTOR,25000,EMP-00003,2015-03-20,,ACTIVE
+EMP-00010,Jamal Anand,jamal.anand@example.com,DEPT-004,"Director, Legal & Compliance",DIRECTOR,25000,EMP-00003,2018-03-09,,ACTIVE
+EMP-00011,Aarav Kowalski,aarav.kowalski@example.com,DEPT-005,"Director, Procurement",DIRECTOR,25000,EMP-00003,2016-07-29,,ACTIVE
+EMP-00012,Maria Gupta,maria.gupta@example.com,DEPT-006,"Director, IT Infrastructure",DIRECTOR,25000,EMP-00004,2020-09-12,,ACTIVE
+EMP-00013,Caleb Suzuki,caleb.suzuki@example.com,DEPT-007,"Director, Software Engineering",DIRECTOR,25000,EMP-00004,2012-11-30,,ACTIVE
+EMP-00014,Amara Walsh,amara.walsh@example.com,DEPT-008,"Director, Research & Development",DIRECTOR,25000,EMP-00004,2012-01-21,,ACTIVE
+EMP-00015,Hiroshi Das,hiroshi.das@example.com,DEPT-009,"Director, Manufacturing",DIRECTOR,25000,EMP-00005,2013-12-05,,ACTIVE
+EMP-00016,Imani Nguyen,imani.nguyen@example.com,DEPT-010,"Director, Quality Assurance",DIRECTOR,25000,EMP-00005,2012-01-08,,ACTIVE
+EMP-00017,Yusuf Chandra,yusuf.chandra@example.com,DEPT-011,"Director, Logistics & Warehousing",DIRECTOR,25000,EMP-00005,2018-06-21,,ACTIVE
+EMP-00018,Malik Olsen,malik.olsen@example.com,DEPT-012,"Director, Facilities",DIRECTOR,25000,EMP-00005,2013-10-28,,ACTIVE
+EMP-00019,Sofia Bose,sofia.bose@example.com,DEPT-013,"Director, Marketing",DIRECTOR,25000,EMP-00006,2017-07-04,,ACTIVE
+EMP-00020,Hiroshi Anand,hiroshi.anand@example.com,DEPT-014,"Director, Sales",DIRECTOR,25000,EMP-00006,2017-12-19,,ACTIVE
+EMP-00021,Elena Ramirez,elena.ramirez@example.com,DEPT-015,"Director, Customer Support",DIRECTOR,25000,EMP-00006,2017-05-07,,ACTIVE
+EMP-00022,Valentina Lambert,valentina.lambert@example.com,DEPT-016,"Director, Health, Safety & Environment",DIRECTOR,25000,EMP-00005,2022-05-11,,ACTIVE
+EMP-00023,Tariq Kim,tariq.kim@example.com,DEPT-001,Executive Office Manager,MANAGER,5000,EMP-00007,2014-11-07,,ACTIVE
+EMP-00024,Tariq Castillo,tariq.castillo@example.com,DEPT-001,Executive Office Manager,MANAGER,5000,EMP-00007,2013-01-22,,ACTIVE
+EMP-00025,Wei Abbott,wei.abbott@example.com,DEPT-002,Finance Manager,MANAGER,5000,EMP-00008,2013-03-06,,ACTIVE
+EMP-00026,Felix Nakamura,felix.nakamura@example.com,DEPT-002,Finance Manager,MANAGER,5000,EMP-00008,2017-09-01,,ACTIVE
+EMP-00027,Anika Murphy,anika.murphy@example.com,DEPT-002,Finance Manager,MANAGER,5000,EMP-00008,2019-01-01,,ACTIVE
+EMP-00028,Olivia Santos,olivia.santos@example.com,DEPT-003,Human Resources Manager,MANAGER,5000,EMP-00009,2014-12-01,,ACTIVE
+EMP-00029,Hiroshi Bauer,hiroshi.bauer@example.com,DEPT-003,Human Resources Manager,MANAGER,5000,EMP-00009,2018-08-22,,ACTIVE
+EMP-00030,Chen Kapoor,chen.kapoor@example.com,DEPT-004,Legal & Compliance Manager,MANAGER,5000,EMP-00010,2015-11-02,,ACTIVE
+EMP-00031,Ibrahim Garcia,ibrahim.garcia@example.com,DEPT-004,Legal & Compliance Manager,MANAGER,5000,EMP-00010,2012-07-19,,ACTIVE
+EMP-00032,Felix Thompson,felix.thompson@example.com,DEPT-005,Procurement Manager,MANAGER,5000,EMP-00011,2018-06-24,,ACTIVE
+EMP-00033,Olivia Singh,olivia.singh@example.com,DEPT-005,Procurement Manager,MANAGER,5000,EMP-00011,2013-06-19,,ACTIVE
+EMP-00034,Sana Chen,sana.chen@example.com,DEPT-006,IT Infrastructure Manager,MANAGER,5000,EMP-00012,2024-11-02,,ACTIVE
+EMP-00035,Tariq Kapoor,tariq.kapoor@example.com,DEPT-006,IT Infrastructure Manager,MANAGER,5000,EMP-00012,2019-05-01,,ACTIVE
+EMP-00036,Emeka Lambert,emeka.lambert@example.com,DEPT-006,IT Infrastructure Manager,MANAGER,5000,EMP-00012,2024-04-09,,ACTIVE
+EMP-00037,Nadia Mehta,nadia.mehta@example.com,DEPT-007,Software Engineering Manager,MANAGER,5000,EMP-00013,2014-01-25,,ACTIVE
+EMP-00038,Zoe Das,zoe.das@example.com,DEPT-007,Software Engineering Manager,MANAGER,5000,EMP-00013,2021-08-07,,ACTIVE
+EMP-00039,Samuel Bauer,samuel.bauer@example.com,DEPT-007,Software Engineering Manager,MANAGER,5000,EMP-00013,2022-09-26,,ACTIVE
+EMP-00040,Leila Morales,leila.morales@example.com,DEPT-007,Software Engineering Manager,MANAGER,5000,EMP-00013,2022-07-02,,ACTIVE
+EMP-00041,Olivia Bennett,olivia.bennett@example.com,DEPT-008,Research & Development Manager,MANAGER,5000,EMP-00014,2013-08-17,,ACTIVE
+EMP-00042,Diego Fraser,diego.fraser@example.com,DEPT-008,Research & Development Manager,MANAGER,5000,EMP-00014,2023-11-23,,ACTIVE
+EMP-00043,Liam Quinn,liam.quinn@example.com,DEPT-008,Research & Development Manager,MANAGER,5000,EMP-00014,2021-04-06,,ACTIVE
+EMP-00044,Mateo Jansen,mateo.jansen@example.com,DEPT-008,Research & Development Manager,MANAGER,5000,EMP-00014,2016-07-13,,ACTIVE
+EMP-00045,Omar Thompson,omar.thompson@example.com,DEPT-009,Manufacturing Manager,MANAGER,5000,EMP-00015,2020-02-14,,ACTIVE
+EMP-00046,Chloe Tanaka,chloe.tanaka@example.com,DEPT-009,Manufacturing Manager,MANAGER,5000,EMP-00015,2022-03-10,,ACTIVE
+EMP-00047,Yara Reddy,yara.reddy@example.com,DEPT-009,Manufacturing Manager,MANAGER,5000,EMP-00015,2018-01-12,,ACTIVE
+EMP-00048,Jamal Larsen,jamal.larsen@example.com,DEPT-009,Manufacturing Manager,MANAGER,5000,EMP-00015,2014-03-13,,ACTIVE
+EMP-00049,Javier Rossi,javier.rossi@example.com,DEPT-009,Manufacturing Manager,MANAGER,5000,EMP-00015,2022-08-13,,ACTIVE
+EMP-00050,Amara Mehta,amara.mehta@example.com,DEPT-010,Quality Assurance Manager,MANAGER,5000,EMP-00016,2023-02-09,,ACTIVE
+EMP-00051,Chen Ramirez,chen.ramirez@example.com,DEPT-010,Quality Assurance Manager,MANAGER,5000,EMP-00016,2013-06-17,,ACTIVE
+EMP-00052,Emeka Kapoor,emeka.kapoor@example.com,DEPT-011,Logistics & Warehousing Manager,MANAGER,5000,EMP-00017,2023-11-19,,ACTIVE
+EMP-00053,Sofia Edwards,sofia.edwards@example.com,DEPT-011,Logistics & Warehousing Manager,MANAGER,5000,EMP-00017,2018-07-01,,ACTIVE
+EMP-00054,Olivia Patel,olivia.patel@example.com,DEPT-011,Logistics & Warehousing Manager,MANAGER,5000,EMP-00017,2024-07-04,,ACTIVE
+EMP-00055,Tariq Shah,tariq.shah@example.com,DEPT-012,Facilities Manager,MANAGER,5000,EMP-00018,2016-01-16,,ACTIVE
+EMP-00056,Jamal Bennett,jamal.bennett@example.com,DEPT-012,Facilities Manager,MANAGER,5000,EMP-00018,2015-02-21,,ACTIVE
+EMP-00057,Jasmine Ramirez,jasmine.ramirez@example.com,DEPT-013,Marketing Manager,MANAGER,5000,EMP-00019,2022-06-11,,ACTIVE
+EMP-00058,Maria Suzuki,maria.suzuki@example.com,DEPT-013,Marketing Manager,MANAGER,5000,EMP-00019,2013-02-03,,ACTIVE
+EMP-00059,Elijah Jansen,elijah.jansen@example.com,DEPT-013,Marketing Manager,MANAGER,5000,EMP-00019,2016-12-18,,ACTIVE
+EMP-00060,Zoe Garcia,zoe.garcia@example.com,DEPT-014,Sales Manager,MANAGER,5000,EMP-00020,2012-09-16,,ACTIVE
+EMP-00061,Mohammed Garcia,mohammed.garcia@example.com,DEPT-014,Sales Manager,MANAGER,5000,EMP-00020,2016-04-02,,ACTIVE
+EMP-00062,Emeka Larsen,emeka.larsen@example.com,DEPT-014,Sales Manager,MANAGER,5000,EMP-00020,2015-05-31,,ACTIVE
+EMP-00063,Priya Singh,priya.singh@example.com,DEPT-014,Sales Manager,MANAGER,5000,EMP-00020,2015-07-14,,ACTIVE
+EMP-00064,Daniel Carter,daniel.carter@example.com,DEPT-015,Customer Support Manager,MANAGER,5000,EMP-00021,2016-01-11,,ACTIVE
+EMP-00065,Lucia Chen,lucia.chen@example.com,DEPT-015,Customer Support Manager,MANAGER,5000,EMP-00021,2018-08-25,,ACTIVE
+EMP-00066,Javier Bauer,javier.bauer@example.com,DEPT-015,Customer Support Manager,MANAGER,5000,EMP-00021,2022-06-11,,ACTIVE
+EMP-00067,Yusuf Iyer,yusuf.iyer@example.com,DEPT-016,"Health, Safety & Environment Manager",MANAGER,5000,EMP-00022,2019-11-20,,ACTIVE
+EMP-00068,Deepa Rossi,deepa.rossi@example.com,DEPT-016,"Health, Safety & Environment Manager",MANAGER,5000,EMP-00022,2015-04-22,,ACTIVE
+EMP-00069,Valentina Fischer,valentina.fischer@example.com,DEPT-005,Senior Buyer,BUYER,,EMP-00032,2019-08-30,,ACTIVE
+EMP-00070,Hannah Santos,hannah.santos@example.com,DEPT-005,Buyer,BUYER,,EMP-00032,2015-06-15,,ACTIVE
+EMP-00071,Maya Rossi,maya.rossi@example.com,DEPT-005,Buyer,BUYER,,EMP-00032,2024-12-14,,ACTIVE
+EMP-00072,Julia Martin,julia.martin@example.com,DEPT-005,Senior Buyer,BUYER,,EMP-00033,2021-08-10,,ACTIVE
+EMP-00073,Sana Patel,sana.patel@example.com,DEPT-005,Buyer,BUYER,,EMP-00033,2020-08-02,,ACTIVE
+EMP-00074,Nadia Becker,nadia.becker@example.com,DEPT-005,Buyer,BUYER,,EMP-00033,2014-01-18,,ACTIVE
+EMP-00075,Tariq Nakamura,tariq.nakamura@example.com,DEPT-005,Senior Buyer,BUYER,,EMP-00032,2025-12-15,,ACTIVE
+EMP-00076,Liam Patel,liam.patel@example.com,DEPT-005,Buyer,BUYER,,EMP-00032,2020-07-05,,ACTIVE
+EMP-00077,Adrian Nguyen,adrian.nguyen@example.com,DEPT-002,Financial Controller,FINANCE_CONTROLLER,,EMP-00025,2016-06-20,,ACTIVE
+EMP-00078,Deepa Becker,deepa.becker@example.com,DEPT-002,Financial Controller,FINANCE_CONTROLLER,,EMP-00027,2016-07-26,,ACTIVE
+EMP-00079,Malik Gupta,malik.gupta@example.com,DEPT-002,Financial Controller,FINANCE_CONTROLLER,,EMP-00027,2017-07-02,,ACTIVE
+EMP-00080,Elena Anand,elena.anand@example.com,DEPT-001,Executive Associate,STAFF,,EMP-00023,2019-01-29,,ACTIVE
+EMP-00081,Hannah Petrov,hannah.petrov@example.com,DEPT-001,Executive Engineer,STAFF,,EMP-00023,2019-02-04,,ACTIVE
+EMP-00082,Jasmine Ibarra,jasmine.ibarra@example.com,DEPT-001,Executive Coordinator,STAFF,,EMP-00024,2014-03-25,,ACTIVE
+EMP-00083,Olivia Okafor,olivia.okafor@example.com,DEPT-001,Executive Coordinator,STAFF,,EMP-00023,2016-11-16,,ACTIVE
+EMP-00084,Camila Hansen,camila.hansen@example.com,DEPT-001,Executive Technician,STAFF,,EMP-00023,2015-11-21,,ACTIVE
+EMP-00085,Hiroshi Lee,hiroshi.lee@example.com,DEPT-001,Executive Technician,STAFF,,EMP-00024,2016-03-12,,ACTIVE
+EMP-00086,Kai Mahmoud,kai.mahmoud@example.com,DEPT-001,Executive Analyst,STAFF,,EMP-00023,2025-04-06,,ACTIVE
+EMP-00087,Zara Kim,zara.kim@example.com,DEPT-002,Finance Technician,STAFF,,EMP-00026,2021-07-01,,ACTIVE
+EMP-00088,Samuel Weber,samuel.weber@example.com,DEPT-002,Finance Specialist,STAFF,,EMP-00025,2016-05-17,,ACTIVE
+EMP-00089,Zoe Castillo,zoe.castillo@example.com,DEPT-002,Finance Specialist,STAFF,,EMP-00026,2023-05-16,2026-05-03,INACTIVE
+EMP-00090,Olivia Chen,olivia.chen@example.com,DEPT-002,Finance Associate,STAFF,,EMP-00026,2023-05-12,,ACTIVE
+EMP-00091,Samuel Dimitrov,samuel.dimitrov@example.com,DEPT-002,Finance Engineer,STAFF,,EMP-00027,2022-05-23,,ACTIVE
+EMP-00092,Ibrahim Tanaka,ibrahim.tanaka@example.com,DEPT-002,Finance Engineer,STAFF,,EMP-00026,2016-05-01,,ACTIVE
+EMP-00093,Sana Bauer,sana.bauer@example.com,DEPT-002,Finance Coordinator,STAFF,,EMP-00025,2019-06-20,,ACTIVE
+EMP-00094,Yusuf Hansen,yusuf.hansen@example.com,DEPT-002,Finance Technician,STAFF,,EMP-00027,2014-05-06,,ACTIVE
+EMP-00095,Priya Martin,priya.martin@example.com,DEPT-002,Finance Specialist,STAFF,,EMP-00025,2020-07-05,,ACTIVE
+EMP-00096,Chen Schmidt,chen.schmidt@example.com,DEPT-002,Finance Specialist,STAFF,,EMP-00027,2022-05-19,,ACTIVE
+EMP-00097,Maya Bose,maya.bose@example.com,DEPT-002,Finance Engineer,STAFF,,EMP-00027,2023-01-13,,ACTIVE
+EMP-00098,Mohammed Nakamura,mohammed.nakamura@example.com,DEPT-002,Finance Analyst,STAFF,,EMP-00025,2026-01-17,,ACTIVE
+EMP-00099,Anika Thompson,anika.thompson@example.com,DEPT-003,Human Coordinator,STAFF,,EMP-00028,2014-04-06,,ACTIVE
+EMP-00100,Beatriz Morales,beatriz.morales@example.com,DEPT-003,Human Engineer,STAFF,,EMP-00029,2016-12-08,,ACTIVE
+EMP-00101,Javier Larsen,javier.larsen@example.com,DEPT-003,Human Technician,STAFF,,EMP-00029,2018-03-29,,ACTIVE
+EMP-00102,Mei Dimitrov,mei.dimitrov@example.com,DEPT-003,Human Technician,STAFF,,EMP-00028,2021-08-27,,ACTIVE
+EMP-00103,Julia Reddy,julia.reddy@example.com,DEPT-003,Human Coordinator,STAFF,,EMP-00029,2020-12-25,,ACTIVE
+EMP-00104,Lucia Reddy,lucia.reddy@example.com,DEPT-003,Human Associate,STAFF,,EMP-00028,2019-01-24,,ACTIVE
+EMP-00105,Kai Reddy,kai.reddy@example.com,DEPT-003,Human Specialist,STAFF,,EMP-00029,2024-09-15,,ACTIVE
+EMP-00106,Emeka Olsen,emeka.olsen@example.com,DEPT-003,Human Specialist,STAFF,,EMP-00028,2022-02-13,,ACTIVE
+EMP-00107,Hiroshi Gupta,hiroshi.gupta@example.com,DEPT-003,Human Analyst,STAFF,,EMP-00028,2021-10-16,,ACTIVE
+EMP-00108,Samuel Carter,samuel.carter@example.com,DEPT-004,Legal Engineer,STAFF,,EMP-00030,2024-07-29,,ACTIVE
+EMP-00109,Alejandro Adeyemi,alejandro.adeyemi@example.com,DEPT-004,Legal Analyst,STAFF,,EMP-00030,2014-10-11,,ACTIVE
+EMP-00110,Samuel Lambert,samuel.lambert@example.com,DEPT-004,Legal Analyst,STAFF,,EMP-00031,2014-11-07,,ACTIVE
+EMP-00111,Adrian Jansen,adrian.jansen@example.com,DEPT-004,Legal Coordinator,STAFF,,EMP-00030,2023-11-24,,ACTIVE
+EMP-00112,Naomi Murphy,naomi.murphy@example.com,DEPT-004,Legal Specialist,STAFF,,EMP-00031,2016-10-06,,ACTIVE
+EMP-00113,Adrian Nakamura,adrian.nakamura@example.com,DEPT-004,Legal Technician,STAFF,,EMP-00030,2014-03-01,,ACTIVE
+EMP-00114,Anika Dimitrov,anika.dimitrov@example.com,DEPT-005,Procurement Coordinator,STAFF,,EMP-00032,2018-08-31,,ACTIVE
+EMP-00115,Anika Garcia,anika.garcia@example.com,DEPT-005,Procurement Coordinator,STAFF,,EMP-00033,2019-07-19,,ACTIVE
+EMP-00116,Nadia Adeyemi,nadia.adeyemi@example.com,DEPT-005,Procurement Specialist,STAFF,,EMP-00032,2021-08-22,,ACTIVE
+EMP-00117,Lara Bennett,lara.bennett@example.com,DEPT-005,Procurement Associate,STAFF,,EMP-00033,2014-05-16,,ACTIVE
+EMP-00118,Hiroshi Flores,hiroshi.flores@example.com,DEPT-005,Procurement Specialist,STAFF,,EMP-00033,2021-12-06,,ACTIVE
+EMP-00119,Julia Ibarra,julia.ibarra@example.com,DEPT-005,Procurement Specialist,STAFF,,EMP-00033,2020-05-05,,ACTIVE
+EMP-00120,Liam Singh,liam.singh@example.com,DEPT-005,Procurement Analyst,STAFF,,EMP-00033,2017-12-29,,ACTIVE
+EMP-00121,Elena Williams,elena.williams@example.com,DEPT-005,Procurement Analyst,STAFF,,EMP-00032,2022-03-11,,ACTIVE
+EMP-00122,Camila Kim,camila.kim@example.com,DEPT-005,Procurement Engineer,STAFF,,EMP-00032,2023-11-30,,ACTIVE
+EMP-00123,Andre Schmidt,andre.schmidt@example.com,DEPT-006,IT Specialist,STAFF,,EMP-00035,2019-01-01,,ACTIVE
+EMP-00124,Jasmine Suzuki,jasmine.suzuki@example.com,DEPT-006,IT Associate,STAFF,,EMP-00036,2014-07-09,,ACTIVE
+EMP-00125,Jamal Tanaka,jamal.tanaka@example.com,DEPT-006,IT Engineer,STAFF,,EMP-00035,2024-08-01,,ACTIVE
+EMP-00126,Mateo Zhang,mateo.zhang@example.com,DEPT-006,IT Analyst,STAFF,,EMP-00034,2014-08-05,,ACTIVE
+EMP-00127,Elijah Fraser,elijah.fraser@example.com,DEPT-006,IT Technician,STAFF,,EMP-00036,2021-01-05,,ACTIVE
+EMP-00128,Daniel Costa,daniel.costa@example.com,DEPT-006,IT Coordinator,STAFF,,EMP-00034,2019-11-24,,ACTIVE
+EMP-00129,Rafael Mehta,rafael.mehta@example.com,DEPT-006,IT Specialist,STAFF,,EMP-00035,2023-12-22,,ACTIVE
+EMP-00130,Chen Dimitrov,chen.dimitrov@example.com,DEPT-006,IT Engineer,STAFF,,EMP-00036,2020-12-07,,ACTIVE
+EMP-00131,Lucia Murphy,lucia.murphy@example.com,DEPT-006,IT Technician,STAFF,,EMP-00035,2020-03-12,,ACTIVE
+EMP-00132,Amara Weber,amara.weber@example.com,DEPT-006,IT Engineer,STAFF,,EMP-00034,2025-03-25,,ACTIVE
+EMP-00133,Mohammed Bose,mohammed.bose@example.com,DEPT-006,IT Specialist,STAFF,,EMP-00036,2018-09-23,,ACTIVE
+EMP-00134,Amara Lopez,amara.lopez@example.com,DEPT-006,IT Engineer,STAFF,,EMP-00036,2024-05-21,,ACTIVE
+EMP-00135,Deepa Thompson,deepa.thompson@example.com,DEPT-006,IT Specialist,STAFF,,EMP-00034,2017-03-10,,ACTIVE
+EMP-00136,Anika Adeyemi,anika.adeyemi@example.com,DEPT-006,IT Coordinator,STAFF,,EMP-00035,2018-08-11,,ACTIVE
+EMP-00137,Hannah Kapoor,hannah.kapoor@example.com,DEPT-006,IT Specialist,STAFF,,EMP-00035,2021-11-22,,ACTIVE
+EMP-00138,Yusuf Santos,yusuf.santos@example.com,DEPT-007,Software Specialist,STAFF,,EMP-00040,2025-07-01,,ACTIVE
+EMP-00139,Fatima Lambert,fatima.lambert@example.com,DEPT-007,Software Analyst,STAFF,,EMP-00040,2019-06-24,,ACTIVE
+EMP-00140,Sana Thompson,sana.thompson@example.com,DEPT-007,Software Technician,STAFF,,EMP-00038,2019-01-05,,ACTIVE
+EMP-00141,Caleb Larsen,caleb.larsen@example.com,DEPT-007,Software Associate,STAFF,,EMP-00039,2017-09-22,,ACTIVE
+EMP-00142,Felix Kapoor,felix.kapoor@example.com,DEPT-007,Software Associate,STAFF,,EMP-00037,2018-01-17,,ACTIVE
+EMP-00143,Aisha Bennett,aisha.bennett@example.com,DEPT-007,Software Associate,STAFF,,EMP-00040,2020-04-22,,ACTIVE
+EMP-00144,Hiroshi Jansen,hiroshi.jansen@example.com,DEPT-007,Software Associate,STAFF,,EMP-00038,2021-02-12,,ACTIVE
+EMP-00145,Alejandro Iyer,alejandro.iyer@example.com,DEPT-007,Software Engineer,STAFF,,EMP-00040,2018-11-09,,ACTIVE
+EMP-00146,Nikhil Costa,nikhil.costa@example.com,DEPT-007,Software Coordinator,STAFF,,EMP-00040,2018-06-15,,ACTIVE
+EMP-00147,Daniel Suzuki,daniel.suzuki@example.com,DEPT-007,Software Analyst,STAFF,,EMP-00040,2021-11-04,,ACTIVE
+EMP-00148,Daniel Nakamura,daniel.nakamura@example.com,DEPT-007,Software Engineer,STAFF,,EMP-00037,2014-02-17,,ACTIVE
+EMP-00149,Maria Kapoor,maria.kapoor@example.com,DEPT-007,Software Engineer,STAFF,,EMP-00037,2017-07-21,,ACTIVE
+EMP-00150,Valentina Fraser,valentina.fraser@example.com,DEPT-007,Software Associate,STAFF,,EMP-00038,2017-08-10,,ACTIVE
+EMP-00151,Andre Ramirez,andre.ramirez@example.com,DEPT-007,Software Associate,STAFF,,EMP-00038,2020-12-22,,ACTIVE
+EMP-00152,Ibrahim Costa,ibrahim.costa@example.com,DEPT-007,Software Coordinator,STAFF,,EMP-00037,2017-05-09,,ACTIVE
+EMP-00153,Anika Chen,anika.chen@example.com,DEPT-007,Software Engineer,STAFF,,EMP-00037,2015-08-28,,ACTIVE
+EMP-00154,Daniel Okafor,daniel.okafor@example.com,DEPT-007,Software Technician,STAFF,,EMP-00037,2018-06-14,,ACTIVE
+EMP-00155,Nikhil Lambert,nikhil.lambert@example.com,DEPT-007,Software Associate,STAFF,,EMP-00039,2014-02-02,,ACTIVE
+EMP-00156,Ibrahim Kim,ibrahim.kim@example.com,DEPT-007,Software Engineer,STAFF,,EMP-00038,2020-02-17,,ACTIVE
+EMP-00157,Rosa Garcia,rosa.garcia@example.com,DEPT-007,Software Specialist,STAFF,,EMP-00039,2026-08-11,,ACTIVE
+EMP-00158,Lucia Bose,lucia.bose@example.com,DEPT-007,Software Technician,STAFF,,EMP-00037,2018-06-03,,ACTIVE
+EMP-00159,Deepa Fischer,deepa.fischer@example.com,DEPT-007,Software Analyst,STAFF,,EMP-00039,2014-11-19,,ACTIVE
+EMP-00160,Omar Quinn,omar.quinn@example.com,DEPT-007,Software Associate,STAFF,,EMP-00037,2016-03-02,,ACTIVE
+EMP-00161,Chloe Haddad,chloe.haddad@example.com,DEPT-007,Software Specialist,STAFF,,EMP-00039,2016-09-03,,ACTIVE
+EMP-00162,Elena Okafor,elena.okafor@example.com,DEPT-008,Research Engineer,STAFF,,EMP-00041,2017-04-23,,ACTIVE
+EMP-00163,Rosa Ramirez,rosa.ramirez@example.com,DEPT-008,Research Coordinator,STAFF,,EMP-00044,2024-08-29,,ACTIVE
+EMP-00164,Priya Costa,priya.costa@example.com,DEPT-008,Research Specialist,STAFF,,EMP-00044,2020-09-24,,ACTIVE
+EMP-00165,Grace Bauer,grace.bauer@example.com,DEPT-008,Research Specialist,STAFF,,EMP-00041,2016-06-11,,ACTIVE
+EMP-00166,Hiroshi Ibarra,hiroshi.ibarra@example.com,DEPT-008,Research Engineer,STAFF,,EMP-00042,2023-07-02,,ACTIVE
+EMP-00167,Chen Becker,chen.becker@example.com,DEPT-008,Research Engineer,STAFF,,EMP-00043,2016-02-17,,ACTIVE
+EMP-00168,Mei Kim,mei.kim@example.com,DEPT-008,Research Engineer,STAFF,,EMP-00043,2022-01-30,,ACTIVE
+EMP-00169,Nadia Lopez,nadia.lopez@example.com,DEPT-008,Research Associate,STAFF,,EMP-00042,2019-05-18,,ACTIVE
+EMP-00170,Fatima Iyer,fatima.iyer@example.com,DEPT-008,Research Coordinator,STAFF,,EMP-00043,2025-09-09,,ACTIVE
+EMP-00171,Rosa Zhang,rosa.zhang@example.com,DEPT-008,Research Technician,STAFF,,EMP-00042,2015-06-19,,ACTIVE
+EMP-00172,Zoe Lopez,zoe.lopez@example.com,DEPT-008,Research Associate,STAFF,,EMP-00042,2023-09-20,,ACTIVE
+EMP-00173,Arjun Gupta,arjun.gupta@example.com,DEPT-008,Research Analyst,STAFF,,EMP-00043,2014-09-21,,ACTIVE
+EMP-00174,Priya Novak,priya.novak@example.com,DEPT-008,Research Specialist,STAFF,,EMP-00043,2017-06-21,,ACTIVE
+EMP-00175,Hannah Chen,hannah.chen@example.com,DEPT-008,Research Technician,STAFF,,EMP-00044,2018-06-19,,ACTIVE
+EMP-00176,Adrian Okafor,adrian.okafor@example.com,DEPT-008,Research Specialist,STAFF,,EMP-00044,2018-05-19,,ACTIVE
+EMP-00177,Sana Santos,sana.santos@example.com,DEPT-008,Research Engineer,STAFF,,EMP-00043,2017-06-23,,ACTIVE
+EMP-00178,Diego Dimitrov,diego.dimitrov@example.com,DEPT-008,Research Analyst,STAFF,,EMP-00042,2024-10-04,2026-08-15,INACTIVE
+EMP-00179,Chen Singh,chen.singh@example.com,DEPT-008,Research Technician,STAFF,,EMP-00042,2014-06-16,,ACTIVE
+EMP-00180,Liam Yamamoto,liam.yamamoto@example.com,DEPT-009,Manufacturing Engineer,STAFF,,EMP-00046,2022-12-28,,ACTIVE
+EMP-00181,Sana Chandra,sana.chandra@example.com,DEPT-009,Manufacturing Coordinator,STAFF,,EMP-00046,2026-03-02,,ACTIVE
+EMP-00182,Leila Walsh,leila.walsh@example.com,DEPT-009,Manufacturing Associate,STAFF,,EMP-00046,2021-08-14,,ACTIVE
+EMP-00183,Elena Walsh,elena.walsh@example.com,DEPT-009,Manufacturing Analyst,STAFF,,EMP-00046,2026-03-09,,ACTIVE
+EMP-00184,Aisha Ibarra,aisha.ibarra@example.com,DEPT-009,Manufacturing Analyst,STAFF,,EMP-00045,2022-12-22,,ACTIVE
+EMP-00185,Olivia Kapoor,olivia.kapoor@example.com,DEPT-009,Manufacturing Coordinator,STAFF,,EMP-00045,2025-10-23,,ACTIVE
+EMP-00186,Chen Larsen,chen.larsen@example.com,DEPT-009,Manufacturing Analyst,STAFF,,EMP-00047,2019-05-03,,ACTIVE
+EMP-00187,Rosa Walsh,rosa.walsh@example.com,DEPT-009,Manufacturing Specialist,STAFF,,EMP-00047,2024-10-04,,ACTIVE
+EMP-00188,Wei Castillo,wei.castillo@example.com,DEPT-009,Manufacturing Coordinator,STAFF,,EMP-00049,2025-12-24,,ACTIVE
+EMP-00189,Amara Fischer,amara.fischer@example.com,DEPT-009,Manufacturing Engineer,STAFF,,EMP-00046,2021-05-12,,ACTIVE
+EMP-00190,Isabel Fischer,isabel.fischer@example.com,DEPT-009,Manufacturing Technician,STAFF,,EMP-00048,2024-09-22,,ACTIVE
+EMP-00191,Noah Zhang,noah.zhang@example.com,DEPT-009,Manufacturing Engineer,STAFF,,EMP-00048,2014-08-01,,ACTIVE
+EMP-00192,Yusuf Shah,yusuf.shah@example.com,DEPT-009,Manufacturing Analyst,STAFF,,EMP-00049,2024-10-12,,ACTIVE
+EMP-00193,Mateo Chen,mateo.chen@example.com,DEPT-009,Manufacturing Analyst,STAFF,,EMP-00045,2024-08-02,,ACTIVE
+EMP-00194,Maya Vargas,maya.vargas@example.com,DEPT-009,Manufacturing Technician,STAFF,,EMP-00049,2019-04-20,,ACTIVE
+EMP-00195,Andre Alvarez,andre.alvarez@example.com,DEPT-009,Manufacturing Technician,STAFF,,EMP-00046,2014-02-10,,ACTIVE
+EMP-00196,Alejandro Nakamura,alejandro.nakamura@example.com,DEPT-009,Manufacturing Technician,STAFF,,EMP-00047,2014-02-11,,ACTIVE
+EMP-00197,Ibrahim Chen,ibrahim.chen@example.com,DEPT-009,Manufacturing Coordinator,STAFF,,EMP-00048,2015-07-26,,ACTIVE
+EMP-00198,Omar Nakamura,omar.nakamura@example.com,DEPT-009,Manufacturing Associate,STAFF,,EMP-00045,2025-12-22,,ACTIVE
+EMP-00199,Fatima Schmidt,fatima.schmidt@example.com,DEPT-009,Manufacturing Technician,STAFF,,EMP-00048,2017-04-27,,ACTIVE
+EMP-00200,Fatima Ibarra,fatima.ibarra@example.com,DEPT-009,Manufacturing Coordinator,STAFF,,EMP-00048,2026-03-26,,ACTIVE
+EMP-00201,Mei Kowalski,mei.kowalski@example.com,DEPT-009,Manufacturing Coordinator,STAFF,,EMP-00046,2014-12-13,,ACTIVE
+EMP-00202,Noah Reddy,noah.reddy@example.com,DEPT-009,Manufacturing Coordinator,STAFF,,EMP-00047,2024-05-11,,ACTIVE
+EMP-00203,Sana Nakamura,sana.nakamura@example.com,DEPT-009,Manufacturing Technician,STAFF,,EMP-00045,2022-02-03,,ACTIVE
+EMP-00204,Mei Lee,mei.lee@example.com,DEPT-009,Manufacturing Engineer,STAFF,,EMP-00048,2021-12-07,,ACTIVE
+EMP-00205,Andre Bennett,andre.bennett@example.com,DEPT-009,Manufacturing Analyst,STAFF,,EMP-00046,2025-04-01,,ACTIVE
+EMP-00206,Leila Alvarez,leila.alvarez@example.com,DEPT-009,Manufacturing Engineer,STAFF,,EMP-00045,2024-10-23,,ACTIVE
+EMP-00207,Elena Weber,elena.weber@example.com,DEPT-009,Manufacturing Specialist,STAFF,,EMP-00046,2020-06-06,,ACTIVE
+EMP-00208,Camila Lee,camila.lee@example.com,DEPT-009,Manufacturing Technician,STAFF,,EMP-00047,2017-07-15,,ACTIVE
+EMP-00209,Aisha Williams,aisha.williams@example.com,DEPT-009,Manufacturing Coordinator,STAFF,,EMP-00047,2016-12-30,,ACTIVE
+EMP-00210,Kavya Bauer,kavya.bauer@example.com,DEPT-010,Quality Specialist,STAFF,,EMP-00051,2014-04-04,,ACTIVE
+EMP-00211,Imani Williams,imani.williams@example.com,DEPT-010,Quality Analyst,STAFF,,EMP-00050,2016-05-16,,ACTIVE
+EMP-00212,Aisha Becker,aisha.becker@example.com,DEPT-010,Quality Specialist,STAFF,,EMP-00050,2023-10-13,,ACTIVE
+EMP-00213,Rafael Hansen,rafael.hansen@example.com,DEPT-010,Quality Technician,STAFF,,EMP-00051,2019-08-27,,ACTIVE
+EMP-00214,Noah Silva,noah.silva@example.com,DEPT-010,Quality Technician,STAFF,,EMP-00050,2025-02-24,,ACTIVE
+EMP-00215,Deepa Singh,deepa.singh@example.com,DEPT-010,Quality Specialist,STAFF,,EMP-00051,2016-10-28,,ACTIVE
+EMP-00216,Naomi Kapoor,naomi.kapoor@example.com,DEPT-010,Quality Specialist,STAFF,,EMP-00051,2022-04-16,,ACTIVE
+EMP-00217,Lucia Lee,lucia.lee@example.com,DEPT-010,Quality Technician,STAFF,,EMP-00051,2014-06-22,,ACTIVE
+EMP-00218,Adrian Flores,adrian.flores@example.com,DEPT-010,Quality Technician,STAFF,,EMP-00051,2023-07-28,,ACTIVE
+EMP-00219,Maria Anand,maria.anand@example.com,DEPT-010,Quality Specialist,STAFF,,EMP-00050,2017-03-17,,ACTIVE
+EMP-00220,Elijah Lambert,elijah.lambert@example.com,DEPT-010,Quality Technician,STAFF,,EMP-00051,2023-08-03,,ACTIVE
+EMP-00221,Alejandro Lambert,alejandro.lambert@example.com,DEPT-011,Logistics Engineer,STAFF,,EMP-00053,2019-02-24,,ACTIVE
+EMP-00222,Beatriz Shah,beatriz.shah@example.com,DEPT-011,Logistics Specialist,STAFF,,EMP-00052,2020-11-24,,ACTIVE
+EMP-00223,Jasmine Okafor,jasmine.okafor@example.com,DEPT-011,Logistics Technician,STAFF,,EMP-00054,2026-04-06,,ACTIVE
+EMP-00224,Yusuf Silva,yusuf.silva@example.com,DEPT-011,Logistics Coordinator,STAFF,,EMP-00053,2016-09-21,,ACTIVE
+EMP-00225,Olivia Iyer,olivia.iyer@example.com,DEPT-011,Logistics Associate,STAFF,,EMP-00054,2016-11-25,,ACTIVE
+EMP-00226,Kavya Lopez,kavya.lopez@example.com,DEPT-011,Logistics Associate,STAFF,,EMP-00052,2015-01-03,,ACTIVE
+EMP-00227,Ibrahim Castillo,ibrahim.castillo@example.com,DEPT-011,Logistics Associate,STAFF,,EMP-00052,2015-04-10,,ACTIVE
+EMP-00228,Lucia Rossi,lucia.rossi@example.com,DEPT-011,Logistics Technician,STAFF,,EMP-00054,2014-02-18,,ACTIVE
+EMP-00229,Aarav Rossi,aarav.rossi@example.com,DEPT-011,Logistics Technician,STAFF,,EMP-00052,2020-08-29,,ACTIVE
+EMP-00230,Chloe Silva,chloe.silva@example.com,DEPT-011,Logistics Analyst,STAFF,,EMP-00054,2022-02-28,,ACTIVE
+EMP-00231,Javier Anand,javier.anand@example.com,DEPT-011,Logistics Specialist,STAFF,,EMP-00053,2019-07-23,,ACTIVE
+EMP-00232,Amara Garcia,amara.garcia@example.com,DEPT-011,Logistics Analyst,STAFF,,EMP-00053,2018-10-07,,ACTIVE
+EMP-00233,Yara Okafor,yara.okafor@example.com,DEPT-011,Logistics Analyst,STAFF,,EMP-00052,2021-12-12,,ACTIVE
+EMP-00234,Naomi Adeyemi,naomi.adeyemi@example.com,DEPT-011,Logistics Engineer,STAFF,,EMP-00052,2021-11-20,,ACTIVE
+EMP-00235,Aisha Zhang,aisha.zhang@example.com,DEPT-011,Logistics Technician,STAFF,,EMP-00054,2024-01-06,,ACTIVE
+EMP-00236,Rafael Chen,rafael.chen@example.com,DEPT-011,Logistics Specialist,STAFF,,EMP-00053,2020-02-22,,ACTIVE
+EMP-00237,Javier Gupta,javier.gupta@example.com,DEPT-011,Logistics Analyst,STAFF,,EMP-00053,2019-05-05,,ACTIVE
+EMP-00238,Chloe Costa,chloe.costa@example.com,DEPT-012,Facilities Technician,STAFF,,EMP-00056,2016-03-28,,ACTIVE
+EMP-00239,Samuel Shah,samuel.shah@example.com,DEPT-012,Facilities Analyst,STAFF,,EMP-00055,2015-11-15,,ACTIVE
+EMP-00240,Wei Weber,wei.weber@example.com,DEPT-012,Facilities Associate,STAFF,,EMP-00056,2021-01-03,,ACTIVE
+EMP-00241,Leila Singh,leila.singh@example.com,DEPT-012,Facilities Coordinator,STAFF,,EMP-00056,2018-05-15,,ACTIVE
+EMP-00242,Yara Kapoor,yara.kapoor@example.com,DEPT-012,Facilities Engineer,STAFF,,EMP-00056,2014-11-10,,ACTIVE
+EMP-00243,Leila Garcia,leila.garcia@example.com,DEPT-012,Facilities Technician,STAFF,,EMP-00055,2017-07-10,,ACTIVE
+EMP-00244,Naomi Costa,naomi.costa@example.com,DEPT-012,Facilities Associate,STAFF,,EMP-00056,2021-06-01,,ACTIVE
+EMP-00245,Abigail Hansen,abigail.hansen@example.com,DEPT-012,Facilities Analyst,STAFF,,EMP-00055,2017-07-09,,ACTIVE
+EMP-00246,Kai Quinn,kai.quinn@example.com,DEPT-012,Facilities Associate,STAFF,,EMP-00056,2022-01-07,,ACTIVE
+EMP-00247,Sana Hansen,sana.hansen@example.com,DEPT-012,Facilities Analyst,STAFF,,EMP-00055,2017-01-27,,ACTIVE
+EMP-00248,Noah Anand,noah.anand@example.com,DEPT-013,Marketing Engineer,STAFF,,EMP-00058,2014-08-14,,ACTIVE
+EMP-00249,Valentina Ibarra,valentina.ibarra@example.com,DEPT-013,Marketing Technician,STAFF,,EMP-00057,2020-05-09,,ACTIVE
+EMP-00250,Kenji Jansen,kenji.jansen@example.com,DEPT-013,Marketing Technician,STAFF,,EMP-00058,2026-07-13,,ACTIVE
+EMP-00251,Julia Yamamoto,julia.yamamoto@example.com,DEPT-013,Marketing Engineer,STAFF,,EMP-00058,2016-01-08,,ACTIVE
+EMP-00252,Kenji Nguyen,kenji.nguyen@example.com,DEPT-013,Marketing Associate,STAFF,,EMP-00057,2021-04-13,,ACTIVE
+EMP-00253,Alejandro Tanaka,alejandro.tanaka@example.com,DEPT-013,Marketing Associate,STAFF,,EMP-00058,2021-10-16,,ACTIVE
+EMP-00254,Arjun Santos,arjun.santos@example.com,DEPT-013,Marketing Technician,STAFF,,EMP-00059,2019-01-12,,ACTIVE
+EMP-00255,Hiroshi Quinn,hiroshi.quinn@example.com,DEPT-013,Marketing Associate,STAFF,,EMP-00058,2022-03-31,,ACTIVE
+EMP-00256,Zoe Vargas,zoe.vargas@example.com,DEPT-013,Marketing Coordinator,STAFF,,EMP-00059,2016-12-15,,ACTIVE
+EMP-00257,Nikhil Petrov,nikhil.petrov@example.com,DEPT-013,Marketing Analyst,STAFF,,EMP-00057,2022-02-04,,ACTIVE
+EMP-00258,Rafael Petrov,rafael.petrov@example.com,DEPT-013,Marketing Coordinator,STAFF,,EMP-00057,2025-03-13,,ACTIVE
+EMP-00259,Ibrahim Martin,ibrahim.martin@example.com,DEPT-013,Marketing Associate,STAFF,,EMP-00059,2020-02-28,,ACTIVE
+EMP-00260,Fatima Patel,fatima.patel@example.com,DEPT-014,Sales Coordinator,STAFF,,EMP-00062,2023-12-19,,ACTIVE
+EMP-00261,Omar Flores,omar.flores@example.com,DEPT-014,Sales Coordinator,STAFF,,EMP-00061,2017-12-03,,ACTIVE
+EMP-00262,Omar Williams,omar.williams@example.com,DEPT-014,Sales Associate,STAFF,,EMP-00060,2022-01-28,,ACTIVE
+EMP-00263,Olivia Gupta,olivia.gupta@example.com,DEPT-014,Sales Associate,STAFF,,EMP-00063,2026-05-24,,ACTIVE
+EMP-00264,Jamal Mehta,jamal.mehta@example.com,DEPT-014,Sales Engineer,STAFF,,EMP-00060,2025-11-10,,ACTIVE
+EMP-00265,Kenji Okafor,kenji.okafor@example.com,DEPT-014,Sales Coordinator,STAFF,,EMP-00061,2018-05-26,2026-08-23,INACTIVE
+EMP-00266,Deepa Anand,deepa.anand@example.com,DEPT-014,Sales Technician,STAFF,,EMP-00063,2017-01-30,,ACTIVE
+EMP-00267,Lara Larsen,lara.larsen@example.com,DEPT-014,Sales Technician,STAFF,,EMP-00062,2018-04-10,,ACTIVE
+EMP-00268,Camila Chen,camila.chen@example.com,DEPT-014,Sales Coordinator,STAFF,,EMP-00060,2018-03-09,,ACTIVE
+EMP-00269,Abigail Morales,abigail.morales@example.com,DEPT-014,Sales Associate,STAFF,,EMP-00060,2019-08-05,,ACTIVE
+EMP-00270,Julia Nguyen,julia.nguyen@example.com,DEPT-014,Sales Engineer,STAFF,,EMP-00061,2015-05-01,,ACTIVE
+EMP-00271,Kenji Suzuki,kenji.suzuki@example.com,DEPT-014,Sales Associate,STAFF,,EMP-00061,2025-08-22,,ACTIVE
+EMP-00272,Lara Chandra,lara.chandra@example.com,DEPT-014,Sales Engineer,STAFF,,EMP-00062,2020-06-06,,ACTIVE
+EMP-00273,Noah Kapoor,noah.kapoor@example.com,DEPT-014,Sales Specialist,STAFF,,EMP-00062,2025-02-12,,ACTIVE
+EMP-00274,Aisha Larsen,aisha.larsen@example.com,DEPT-014,Sales Engineer,STAFF,,EMP-00060,2014-12-11,,ACTIVE
+EMP-00275,Fatima Quinn,fatima.quinn@example.com,DEPT-014,Sales Engineer,STAFF,,EMP-00060,2020-12-27,,ACTIVE
+EMP-00276,Jasmine Das,jasmine.das@example.com,DEPT-014,Sales Coordinator,STAFF,,EMP-00063,2018-12-09,,ACTIVE
+EMP-00277,Adrian Chandra,adrian.chandra@example.com,DEPT-014,Sales Coordinator,STAFF,,EMP-00063,2020-07-06,,ACTIVE
+EMP-00278,Leila Lambert,leila.lambert@example.com,DEPT-014,Sales Engineer,STAFF,,EMP-00061,2016-01-03,2026-06-13,INACTIVE
+EMP-00279,Diego Quinn,diego.quinn@example.com,DEPT-014,Sales Technician,STAFF,,EMP-00060,2022-05-04,,ACTIVE
+EMP-00280,Malik Morales,malik.morales@example.com,DEPT-015,Customer Coordinator,STAFF,,EMP-00066,2026-07-30,,ACTIVE
+EMP-00281,Jamal Fraser,jamal.fraser@example.com,DEPT-015,Customer Analyst,STAFF,,EMP-00065,2018-01-22,,ACTIVE
+EMP-00282,Liam Ibarra,liam.ibarra@example.com,DEPT-015,Customer Associate,STAFF,,EMP-00066,2025-11-14,,ACTIVE
+EMP-00283,Chloe Flores,chloe.flores@example.com,DEPT-015,Customer Associate,STAFF,,EMP-00064,2025-10-01,,ACTIVE
+EMP-00284,Mateo Iyer,mateo.iyer@example.com,DEPT-015,Customer Associate,STAFF,,EMP-00066,2019-09-08,,ACTIVE
+EMP-00285,Omar Anand,omar.anand@example.com,DEPT-015,Customer Technician,STAFF,,EMP-00066,2021-01-14,,ACTIVE
+EMP-00286,Andre Abbott,andre.abbott@example.com,DEPT-015,Customer Technician,STAFF,,EMP-00065,2025-05-08,,ACTIVE
+EMP-00287,Leila Nguyen,leila.nguyen@example.com,DEPT-015,Customer Coordinator,STAFF,,EMP-00065,2024-04-29,,ACTIVE
+EMP-00288,Noah Novak,noah.novak@example.com,DEPT-015,Customer Specialist,STAFF,,EMP-00066,2026-03-20,,ACTIVE
+EMP-00289,Julia Thompson,julia.thompson@example.com,DEPT-015,Customer Associate,STAFF,,EMP-00064,2026-08-31,,ACTIVE
+EMP-00290,Anika Mendes,anika.mendes@example.com,DEPT-015,Customer Specialist,STAFF,,EMP-00065,2021-03-01,,ACTIVE
+EMP-00291,Omar Kowalski,omar.kowalski@example.com,DEPT-015,Customer Engineer,STAFF,,EMP-00066,2022-05-12,,ACTIVE
+EMP-00292,Samuel Lopez,samuel.lopez@example.com,DEPT-015,Customer Associate,STAFF,,EMP-00066,2019-03-31,,ACTIVE
+EMP-00293,Nadia Vargas,nadia.vargas@example.com,DEPT-015,Customer Coordinator,STAFF,,EMP-00065,2022-06-21,,ACTIVE
+EMP-00294,Alejandro Kim,alejandro.kim@example.com,DEPT-015,Customer Coordinator,STAFF,,EMP-00064,2022-09-04,,ACTIVE
+EMP-00295,Nadia Weber,nadia.weber@example.com,DEPT-016,Health Coordinator,STAFF,,EMP-00067,2015-12-03,2026-06-15,INACTIVE
+EMP-00296,Hiroshi Haddad,hiroshi.haddad@example.com,DEPT-016,Health Analyst,STAFF,,EMP-00068,2024-08-02,,ACTIVE
+EMP-00297,Nikhil Silva,nikhil.silva@example.com,DEPT-016,Health Analyst,STAFF,,EMP-00068,2022-11-16,,ACTIVE
+EMP-00298,Zoe Dimitrov,zoe.dimitrov@example.com,DEPT-016,Health Technician,STAFF,,EMP-00067,2014-02-10,,ACTIVE
+EMP-00299,Nikhil Patel,nikhil.patel@example.com,DEPT-016,Health Specialist,STAFF,,EMP-00068,2026-08-01,,ACTIVE
+EMP-00300,Camila Anand,camila.anand@example.com,DEPT-016,Health Specialist,STAFF,,EMP-00067,2016-10-05,,ACTIVE

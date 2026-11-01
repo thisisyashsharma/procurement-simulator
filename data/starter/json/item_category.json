@@ -1,0 +1,16 @@
+[
+{"category_code": "ELEC", "category_name": "Electrical Components", "budget_type": "OPEX", "is_service": false, "import_duty_rate": 0.025, "standard_lead_time_days": 12},
+{"category_code": "FAC_SVC", "category_name": "Facilities Services", "budget_type": "OPEX", "is_service": true, "import_duty_rate": 0.0, "standard_lead_time_days": 7},
+{"category_code": "FURN", "category_name": "Furniture & Fixtures", "budget_type": "CAPEX", "is_service": false, "import_duty_rate": 0.04, "standard_lead_time_days": 21},
+{"category_code": "IT_HW", "category_name": "IT Hardware", "budget_type": "CAPEX", "is_service": false, "import_duty_rate": 0.02, "standard_lead_time_days": 10},
+{"category_code": "LAB_EQ", "category_name": "Laboratory Equipment", "budget_type": "CAPEX", "is_service": false, "import_duty_rate": 0.035, "standard_lead_time_days": 30},
+{"category_code": "LOG_SVC", "category_name": "Logistics & Freight Services", "budget_type": "OPEX", "is_service": true, "import_duty_rate": 0.0, "standard_lead_time_days": 5},
+{"category_code": "MKT_SVC", "category_name": "Marketing & Print Services", "budget_type": "OPEX", "is_service": true, "import_duty_rate": 0.0, "standard_lead_time_days": 14},
+{"category_code": "MRO", "category_name": "MRO & Spare Parts", "budget_type": "OPEX", "is_service": false, "import_duty_rate": 0.03, "standard_lead_time_days": 7},
+{"category_code": "OFF_SUP", "category_name": "Office Supplies", "budget_type": "OPEX", "is_service": false, "import_duty_rate": 0.03, "standard_lead_time_days": 4},
+{"category_code": "PACK", "category_name": "Packaging Materials", "budget_type": "OPEX", "is_service": false, "import_duty_rate": 0.045, "standard_lead_time_days": 10},
+{"category_code": "PRO_SVC", "category_name": "Professional Services", "budget_type": "OPEX", "is_service": true, "import_duty_rate": 0.0, "standard_lead_time_days": 10},
+{"category_code": "RAW_MAT", "category_name": "Raw Materials", "budget_type": "OPEX", "is_service": false, "import_duty_rate": 0.05, "standard_lead_time_days": 14},
+{"category_code": "SAFETY", "category_name": "Safety & PPE", "budget_type": "OPEX", "is_service": false, "import_duty_rate": 0.035, "standard_lead_time_days": 6},
+{"category_code": "SW_LIC", "category_name": "Software & SaaS Licences", "budget_type": "OPEX", "is_service": true, "import_duty_rate": 0.0, "standard_lead_time_days": 3}
+]

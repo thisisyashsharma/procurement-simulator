@@ -1,0 +1,121 @@
+supplier_id,supplier_name,country_code,currency_code,supplier_tier,payment_terms,default_incoterm,onboarded_date,status,risk_rating,contact_email
+SUP0001,Trident Scientific Instruments LLC,US,USD,APPROVED,NET30,DDP,2017-06-30,ACTIVE,NONE,rfq.sup0001@example.com
+SUP0002,Coldwater Safety Products Inc.,US,USD,PREFERRED,NET30,DAP,2015-05-30,ACTIVE,NONE,rfq.sup0002@example.com
+SUP0003,Copperfield Facility Services Corp.,US,USD,APPROVED,NET30,DAP,2025-05-24,ACTIVE,NONE,rfq.sup0003@example.com
+SUP0004,Bramblecote Furniture Works Corp.,US,USD,PREFERRED,NET30,DDP,2022-08-19,ACTIVE,NONE,rfq.sup0004@example.com
+SUP0005,Wexford Freight Logistics LLC,US,USD,APPROVED,NET30,DAP,2020-05-14,ACTIVE,NONE,rfq.sup0005@example.com
+SUP0006,Riverstone Consulting Group Corp.,US,USD,PREFERRED,NET30,DAP,2017-12-11,ACTIVE,NONE,rfq.sup0006@example.com
+SUP0007,Silverline Materials LLC,US,USD,APPROVED,NET60,DAP,2018-11-09,ACTIVE,NONE,rfq.sup0007@example.com
+SUP0008,Willowmere Creative Studio LLC,US,USD,APPROVED,NET45,DAP,2022-11-28,ACTIVE,NONE,rfq.sup0008@example.com
+SUP0009,Amberline Technology Distribution LLC,US,USD,APPROVED,NET30,DDP,2025-08-04,INACTIVE,NONE,rfq.sup0009@example.com
+SUP0010,Meridian Packaging LLC,US,USD,APPROVED,NET45,DDP,2019-02-04,ACTIVE,NONE,rfq.sup0010@example.com
+SUP0011,Cobaltis Industrial Supply Inc.,US,USD,PREFERRED,NET30,DAP,2015-10-21,ACTIVE,NONE,rfq.sup0011@example.com
+SUP0012,Pinecrest Electrical Components Inc.,US,USD,APPROVED,NET45,DDP,2018-03-27,ACTIVE,NONE,rfq.sup0012@example.com
+SUP0013,Foxhollow Office Supply Inc.,US,USD,STRATEGIC,NET60,DAP,2018-04-29,INACTIVE,NONE,rfq.sup0013@example.com
+SUP0014,Bluefield Software Solutions LLC,US,USD,STRATEGIC,NET30,DDP,2014-08-04,ACTIVE,NONE,rfq.sup0014@example.com
+SUP0015,Marlowe Scientific Instruments GmbH,DE,EUR,APPROVED,NET45,DAP,2015-09-01,ACTIVE,NONE,rfq.sup0015@example.com
+SUP0016,Orionis Safety Products Ltd,GB,GBP,PREFERRED,NET45,FCA,2017-11-08,ACTIVE,NONE,rfq.sup0016@example.com
+SUP0017,Oakhurst Facility Services Corp.,US,USD,APPROVED,NET45,DAP,2023-06-27,ACTIVE,NONE,rfq.sup0017@example.com
+SUP0018,Tamarack Furniture Works Inc.,CA,CAD,APPROVED,NET30,FCA,2020-09-23,ACTIVE,NONE,rfq.sup0018@example.com
+SUP0019,Larkspur Freight Logistics Inc.,US,USD,APPROVED,NET60,DDP,2023-04-28,ACTIVE,NONE,rfq.sup0019@example.com
+SUP0020,Bramblecote Consulting Group Inc.,US,USD,PREFERRED,NET30,DAP,2019-01-31,ACTIVE,NONE,rfq.sup0020@example.com
+SUP0021,Pinecrest Materials AG,DE,EUR,APPROVED,NET45,FCA,2025-01-19,ACTIVE,NONE,rfq.sup0021@example.com
+SUP0022,Evergreen Creative Studio Corp.,US,USD,APPROVED,NET30,DDP,2015-04-17,ACTIVE,NONE,rfq.sup0022@example.com
+SUP0023,Cobaltis Technology Distribution S.A. de C.V.,MX,MXN,PREFERRED,NET60,FOB,2019-09-18,ACTIVE,NONE,rfq.sup0023@example.com
+SUP0024,Netherby Packaging PLC,GB,GBP,PREFERRED,NET60,FOB,2018-05-19,ACTIVE,MEDIUM,rfq.sup0024@example.com
+SUP0025,Wexford Industrial Supply Inc.,CA,CAD,APPROVED,NET60,EXW,2024-12-13,ACTIVE,NONE,rfq.sup0025@example.com
+SUP0026,Amberline Electrical Components Corp.,US,USD,PREFERRED,NET60,DDP,2019-03-01,ACTIVE,NONE,rfq.sup0026@example.com
+SUP0027,Dunmore Office Supply S.A. de C.V.,MX,MXN,APPROVED,NET45,FCA,2025-06-28,ACTIVE,NONE,rfq.sup0027@example.com
+SUP0028,Riverstone Software Solutions LLC,US,USD,STRATEGIC,NET45,DAP,2014-02-24,ACTIVE,NONE,rfq.sup0028@example.com
+SUP0029,Amberline Scientific Instruments Ltd,GB,GBP,PREFERRED,NET30,FCA,2016-01-11,ACTIVE,NONE,rfq.sup0029@example.com
+SUP0030,Elmstead Safety Products Inc.,US,USD,APPROVED,NET30,DAP,2025-08-13,ACTIVE,NONE,rfq.sup0030@example.com
+SUP0031,Harborview Facility Services Inc.,US,USD,APPROVED,NET45,DDP,2017-04-13,ACTIVE,NONE,rfq.sup0031@example.com
+SUP0032,Ironbridge Furniture Works Corp.,US,USD,STRATEGIC,NET45,DDP,2014-08-31,ACTIVE,MEDIUM,rfq.sup0032@example.com
+SUP0033,Coldwater Freight Logistics Inc.,US,USD,PREFERRED,NET45,DAP,2016-06-13,ACTIVE,NONE,rfq.sup0033@example.com
+SUP0034,Oakmont Consulting Group Corp.,US,USD,APPROVED,NET45,DDP,2023-08-23,ACTIVE,NONE,rfq.sup0034@example.com
+SUP0035,Sablewood Materials S.A. de C.V.,MX,MXN,APPROVED,NET60,FOB,2019-05-14,ACTIVE,NONE,rfq.sup0035@example.com
+SUP0036,Stonehill Creative Studio Corp.,US,USD,APPROVED,NET60,DAP,2024-04-26,ACTIVE,NONE,rfq.sup0036@example.com
+SUP0037,Juniper Technology Distribution LLC,US,USD,APPROVED,NET30,DAP,2024-11-04,ACTIVE,NONE,rfq.sup0037@example.com
+SUP0038,Willowmere Packaging Corp.,US,USD,PREFERRED,NET30,DDP,2019-03-26,INACTIVE,NONE,rfq.sup0038@example.com
+SUP0039,Meridian Industrial Supply Inc.,US,USD,PREFERRED,NET30,DDP,2020-06-11,ACTIVE,NONE,rfq.sup0039@example.com
+SUP0040,Hollowell Electrical Components LLC,US,USD,PREFERRED,NET30,DAP,2015-05-18,ACTIVE,NONE,rfq.sup0040@example.com
+SUP0041,Northgate Office Supply LLC,US,USD,APPROVED,NET30,DDP,2019-12-18,ACTIVE,NONE,rfq.sup0041@example.com
+SUP0042,Ravenscroft Software Solutions Inc.,US,USD,APPROVED,NET45,DAP,2017-01-05,ACTIVE,MEDIUM,rfq.sup0042@example.com
+SUP0043,Eastmere Scientific Instruments LLC,US,USD,APPROVED,NET45,DAP,2016-04-28,ACTIVE,NONE,rfq.sup0043@example.com
+SUP0044,"Pinecrest Safety Products Co., Ltd.",CN,CNY,APPROVED,NET30,FCA,2017-04-25,ACTIVE,NONE,rfq.sup0044@example.com
+SUP0045,Meridian Facility Services LLC,US,USD,PREFERRED,NET45,DDP,2016-04-09,ACTIVE,NONE,rfq.sup0045@example.com
+SUP0046,Bramblecote Furniture Works Inc.,CA,CAD,APPROVED,NET30,FOB,2023-12-14,ACTIVE,NONE,rfq.sup0046@example.com
+SUP0047,Sablewood Freight Logistics Inc.,US,USD,APPROVED,NET60,DDP,2018-06-15,ACTIVE,NONE,rfq.sup0047@example.com
+SUP0048,Elmstead Consulting Group Corp.,US,USD,APPROVED,NET30,DAP,2025-09-27,ACTIVE,NONE,rfq.sup0048@example.com
+SUP0049,Birchwood Materials Inc.,US,USD,PREFERRED,NET45,DAP,2018-06-14,ACTIVE,NONE,rfq.sup0049@example.com
+SUP0050,Summit Ridge Creative Studio LLC,US,USD,STRATEGIC,NET30,DAP,2021-08-28,ACTIVE,NONE,rfq.sup0050@example.com
+SUP0051,Foxhollow Technology Distribution Pvt. Ltd.,IN,INR,PREFERRED,NET30,FCA,2021-01-12,ACTIVE,NONE,rfq.sup0051@example.com
+SUP0052,Elmstead Packaging Pvt. Ltd.,IN,INR,APPROVED,NET30,FOB,2020-04-01,ACTIVE,NONE,rfq.sup0052@example.com
+SUP0053,Cobaltis Industrial Supply PLC,GB,GBP,STRATEGIC,NET60,FCA,2020-01-10,ACTIVE,NONE,rfq.sup0053@example.com
+SUP0054,Falconridge Electrical Components Inc.,US,USD,STRATEGIC,NET60,DDP,2014-08-21,INACTIVE,NONE,rfq.sup0054@example.com
+SUP0055,"Tundra Office Supply Co., Ltd.",CN,CNY,PREFERRED,NET30,FCA,2024-01-27,ACTIVE,NONE,rfq.sup0055@example.com
+SUP0056,Oakmont Software Solutions Corp.,US,USD,STRATEGIC,NET30,DDP,2023-10-30,ACTIVE,NONE,rfq.sup0056@example.com
+SUP0057,Summit Ridge Scientific Instruments AG,DE,EUR,PREFERRED,NET45,FCA,2024-09-10,ACTIVE,NONE,rfq.sup0057@example.com
+SUP0058,Lakeshore Safety Products Corp.,US,USD,APPROVED,NET60,DAP,2020-08-14,ACTIVE,NONE,rfq.sup0058@example.com
+SUP0059,Zephyrine Facility Services LLC,US,USD,APPROVED,NET30,DAP,2018-11-15,INACTIVE,NONE,rfq.sup0059@example.com
+SUP0060,Ashgrove Furniture Works Inc.,US,USD,STRATEGIC,NET30,DDP,2015-06-15,ACTIVE,NONE,rfq.sup0060@example.com
+SUP0061,Juniper Freight Logistics LLC,US,USD,APPROVED,NET30,DAP,2019-03-16,ACTIVE,NONE,rfq.sup0061@example.com
+SUP0062,Alder Consulting Group Inc.,US,USD,APPROVED,NET45,DAP,2015-04-15,ACTIVE,NONE,rfq.sup0062@example.com
+SUP0063,Ravenscroft Materials LLC,US,USD,APPROVED,NET30,DDP,2019-08-14,ACTIVE,LOW,rfq.sup0063@example.com
+SUP0064,Wexford Creative Studio Corp.,US,USD,APPROVED,NET60,DAP,2022-11-27,ACTIVE,NONE,rfq.sup0064@example.com
+SUP0065,Harborview Technology Distribution Corp.,US,USD,APPROVED,NET30,DAP,2025-03-09,ACTIVE,NONE,rfq.sup0065@example.com
+SUP0066,Zephyrine Packaging Inc.,US,USD,PREFERRED,NET45,DAP,2019-07-10,INACTIVE,NONE,rfq.sup0066@example.com
+SUP0067,Pinecrest Industrial Supply Corp.,US,USD,APPROVED,NET30,DDP,2017-06-12,ACTIVE,NONE,rfq.sup0067@example.com
+SUP0068,Zephyrine Electrical Components LLC,US,USD,PREFERRED,NET60,DAP,2019-01-19,ACTIVE,NONE,rfq.sup0068@example.com
+SUP0069,Cobaltis Office Supply Corp.,US,USD,APPROVED,NET30,DAP,2022-03-13,ACTIVE,NONE,rfq.sup0069@example.com
+SUP0070,Juniper Software Solutions Corp.,US,USD,PREFERRED,NET60,DAP,2021-02-03,ACTIVE,NONE,rfq.sup0070@example.com
+SUP0071,Highland Scientific Instruments Inc.,US,USD,APPROVED,NET30,DDP,2015-01-30,INACTIVE,NONE,rfq.sup0071@example.com
+SUP0072,Willowmere Safety Products LLC,US,USD,PREFERRED,NET45,DDP,2014-11-27,ACTIVE,NONE,rfq.sup0072@example.com
+SUP0073,Elmstead Facility Services LLC,US,USD,APPROVED,NET45,DAP,2014-03-31,ACTIVE,NONE,rfq.sup0073@example.com
+SUP0074,Coldwater Furniture Works Inc.,US,USD,PREFERRED,NET60,DAP,2014-10-20,ACTIVE,NONE,rfq.sup0074@example.com
+SUP0075,Bramblecote Freight Logistics LLC,US,USD,APPROVED,NET60,DAP,2017-01-04,ACTIVE,NONE,rfq.sup0075@example.com
+SUP0076,Orionis Consulting Group LLC,US,USD,PREFERRED,NET30,DDP,2014-04-13,ACTIVE,NONE,rfq.sup0076@example.com
+SUP0077,Clearwater Materials Inc.,US,USD,APPROVED,NET30,DAP,2022-06-01,ACTIVE,NONE,rfq.sup0077@example.com
+SUP0078,Driftwood Creative Studio Corp.,US,USD,PREFERRED,NET30,DDP,2022-08-19,ACTIVE,NONE,rfq.sup0078@example.com
+SUP0079,Ashgrove Technology Distribution Inc.,US,USD,PREFERRED,NET60,DDP,2021-07-06,ACTIVE,NONE,rfq.sup0079@example.com
+SUP0080,Westbrook Packaging LLC,US,USD,APPROVED,NET45,DAP,2020-06-06,ACTIVE,NONE,rfq.sup0080@example.com
+SUP0081,Bramblecote Industrial Supply Inc.,US,USD,STRATEGIC,NET30,DDP,2018-10-10,ACTIVE,NONE,rfq.sup0081@example.com
+SUP0082,Sablewood Electrical Components Inc.,US,USD,APPROVED,NET30,DDP,2024-06-23,ACTIVE,NONE,rfq.sup0082@example.com
+SUP0083,Wexford Office Supply LLC,US,USD,APPROVED,NET30,DDP,2015-12-20,ACTIVE,NONE,rfq.sup0083@example.com
+SUP0084,Ravenscroft Software Solutions Corp.,US,USD,APPROVED,NET30,DDP,2023-11-02,ACTIVE,NONE,rfq.sup0084@example.com
+SUP0085,Crestway Scientific Instruments Corp.,US,USD,STRATEGIC,NET30,DDP,2016-07-08,ACTIVE,NONE,rfq.sup0085@example.com
+SUP0086,Apexfield Safety Products LLC,US,USD,STRATEGIC,NET45,DDP,2015-10-17,ACTIVE,NONE,rfq.sup0086@example.com
+SUP0087,Apexfield Facility Services Corp.,US,USD,APPROVED,NET30,DAP,2023-09-08,ACTIVE,NONE,rfq.sup0087@example.com
+SUP0088,Sablewood Furniture Works S.A. de C.V.,MX,MXN,PREFERRED,NET45,FCA,2025-11-27,ACTIVE,NONE,rfq.sup0088@example.com
+SUP0089,Bluefield Freight Logistics LLC,US,USD,STRATEGIC,NET30,DDP,2022-05-31,ACTIVE,NONE,rfq.sup0089@example.com
+SUP0090,Hollowell Consulting Group LLC,US,USD,APPROVED,NET30,DDP,2016-09-05,ACTIVE,NONE,rfq.sup0090@example.com
+SUP0091,Foxhollow Materials Inc.,CA,CAD,APPROVED,NET30,FOB,2018-07-12,ACTIVE,NONE,rfq.sup0091@example.com
+SUP0092,Alder Creative Studio Inc.,US,USD,APPROVED,NET60,DDP,2019-11-30,ACTIVE,NONE,rfq.sup0092@example.com
+SUP0093,Eastmere Technology Distribution S.A. de C.V.,MX,MXN,APPROVED,NET45,FCA,2019-06-20,ACTIVE,MEDIUM,rfq.sup0093@example.com
+SUP0094,Cedarline Packaging GmbH,DE,EUR,APPROVED,NET30,FCA,2017-06-01,ACTIVE,NONE,rfq.sup0094@example.com
+SUP0095,Westbrook Industrial Supply Corp.,US,USD,APPROVED,NET30,DDP,2020-07-19,ACTIVE,NONE,rfq.sup0095@example.com
+SUP0096,Redwood Electrical Components Inc.,US,USD,APPROVED,NET30,DDP,2014-10-25,INACTIVE,NONE,rfq.sup0096@example.com
+SUP0097,Amberline Office Supply Inc.,US,USD,APPROVED,NET45,DDP,2019-03-06,ACTIVE,NONE,rfq.sup0097@example.com
+SUP0098,Lindenhall Software Solutions Corp.,US,USD,APPROVED,NET30,DDP,2022-08-29,ACTIVE,NONE,rfq.sup0098@example.com
+SUP0099,Pinecrest Scientific Instruments LLC,US,USD,APPROVED,NET30,DDP,2019-08-07,ACTIVE,NONE,rfq.sup0099@example.com
+SUP0100,Falconridge Safety Products LLC,US,USD,APPROVED,NET30,DDP,2015-07-23,INACTIVE,NONE,rfq.sup0100@example.com
+SUP0101,Lakeshore Facility Services Corp.,US,USD,APPROVED,NET60,DAP,2019-02-28,ACTIVE,NONE,rfq.sup0101@example.com
+SUP0102,Fernbrook Furniture Works Corp.,US,USD,APPROVED,NET30,DAP,2018-05-05,INACTIVE,NONE,rfq.sup0102@example.com
+SUP0103,Harborview Freight Logistics Corp.,US,USD,PREFERRED,NET60,DDP,2025-07-06,ACTIVE,NONE,rfq.sup0103@example.com
+SUP0104,Thornbury Consulting Group Corp.,US,USD,PREFERRED,NET30,DAP,2020-12-21,ACTIVE,NONE,rfq.sup0104@example.com
+SUP0105,Highland Materials LLC,US,USD,APPROVED,NET30,DDP,2024-01-31,ACTIVE,NONE,rfq.sup0105@example.com
+SUP0106,Alder Creative Studio Corp.,US,USD,PREFERRED,NET45,DDP,2016-05-26,ACTIVE,NONE,rfq.sup0106@example.com
+SUP0107,Tamarack Technology Distribution Corp.,US,USD,APPROVED,NET45,DDP,2019-09-23,ACTIVE,LOW,rfq.sup0107@example.com
+SUP0108,Birchwood Packaging Inc.,US,USD,PREFERRED,NET45,DDP,2019-10-03,ACTIVE,NONE,rfq.sup0108@example.com
+SUP0109,Coldwater Industrial Supply Ltd.,CA,CAD,PREFERRED,NET30,DAP,2023-07-15,ACTIVE,NONE,rfq.sup0109@example.com
+SUP0110,Orionis Electrical Components LLC,US,USD,STRATEGIC,NET30,DAP,2017-04-06,ACTIVE,NONE,rfq.sup0110@example.com
+SUP0111,Kestrel Office Supply Corp.,US,USD,PREFERRED,NET45,DAP,2022-06-20,INACTIVE,NONE,rfq.sup0111@example.com
+SUP0112,Quarryside Software Solutions Inc.,US,USD,APPROVED,NET30,DDP,2014-09-27,ACTIVE,MEDIUM,rfq.sup0112@example.com
+SUP0113,Wexford Scientific Instruments Corp.,US,USD,PREFERRED,NET30,DAP,2015-08-03,ACTIVE,NONE,rfq.sup0113@example.com
+SUP0114,Apexfield Safety Products Ltd.,CA,CAD,APPROVED,NET45,EXW,2018-09-04,ACTIVE,NONE,rfq.sup0114@example.com
+SUP0115,Westbrook Facility Services Corp.,US,USD,PREFERRED,NET60,DAP,2020-12-03,ACTIVE,NONE,rfq.sup0115@example.com
+SUP0116,Bluefield Furniture Works Ltd.,CA,CAD,APPROVED,NET30,DDP,2020-04-16,ACTIVE,NONE,rfq.sup0116@example.com
+SUP0117,Tamarack Freight Logistics Corp.,US,USD,APPROVED,NET45,DAP,2024-09-15,ACTIVE,NONE,rfq.sup0117@example.com
+SUP0118,Stonehill Consulting Group Corp.,US,USD,APPROVED,NET45,DAP,2022-09-17,ACTIVE,NONE,rfq.sup0118@example.com
+SUP0119,Thornbury Materials Inc.,US,USD,APPROVED,NET45,DAP,2015-02-21,ACTIVE,NONE,rfq.sup0119@example.com
+SUP0120,Highland Creative Studio Corp.,US,USD,PREFERRED,NET45,DDP,2021-08-16,ACTIVE,NONE,rfq.sup0120@example.com

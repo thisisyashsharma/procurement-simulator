@@ -1,0 +1,15 @@
+[project]
+name = "procurement-synth"
+version = "1.0.0"
+description = "Reproducible synthetic procure-to-pay dataset generator with validation and ground truth"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
