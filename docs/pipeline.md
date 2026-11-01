@@ -13,6 +13,8 @@ config -> master data -> demand -> budgets -> sourcing -> process simulation -> 
 ```
 
 `generator.generate()` runs the generation stages (2-8); `cli.py` adds export, checks and reports.
+While it runs, the command line prints each stage as it starts, for example
+`baseline run: master data > demand > budgets > sourcing > process simulation > finalize`.
 
 | # | Stage | File | Entry point | What it produces |
 |---|---|---|---|---|

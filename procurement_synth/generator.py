@@ -30,23 +30,31 @@ class Dataset:
     notes: dict = field(default_factory=dict)
 
 
-def _run(cfg: RunConfig, plan: AnomalyPlan) -> Dataset:
+def _run(cfg: RunConfig, plan: AnomalyPlan, stage) -> Dataset:
+    stage("master data")
     w = build_master(cfg)
     gt = GroundTruth()
+    stage("demand")
     prs = build_demand(w, gt)
+    stage("budgets")
     build_budgets(w, prs)
     ev = EventLog()
+    stage("sourcing")
     rfqs = plan_sourcing(w, prs, gt, ev)
+    stage("process simulation")
     eng = Engine(w, prs, rfqs, plan, gt, ev).run()
+    stage("finalize")
     tables = finalize(w, prs, rfqs, eng, ev)
     return Dataset(cfg, tables, gt.finalize(), dict(plan.counts))
 
 
-def generate(cfg: RunConfig) -> Dataset:
+def generate(cfg: RunConfig, progress=None) -> Dataset:
+    """`progress(run, stage)`, if given, is called as each stage starts; it only reports, never changes data."""
+    say = progress or (lambda run, stage: None)
     base_cfg = cfg.with_(inject_anomalies=False)
-    baseline = _run(base_cfg, AnomalyPlan(base_cfg))
+    baseline = _run(base_cfg, AnomalyPlan(base_cfg), lambda s: say("baseline run", s))
     if not cfg.inject_anomalies:
         return baseline
-    final = _run(cfg, AnomalyPlan.from_baseline(cfg, baseline.opportunities))
+    final = _run(cfg, AnomalyPlan.from_baseline(cfg, baseline.opportunities), lambda s: say("injected run", s))
     final.baseline = baseline
     return final

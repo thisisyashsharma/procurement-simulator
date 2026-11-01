@@ -7,6 +7,7 @@ import platform
 import shutil
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 from . import controls, docs, metrics, validate
@@ -17,11 +18,28 @@ from .generator import generate
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def _live_steps():
+    """Progress callback for generate(): one line per run, each stage added as it starts."""
+    last = None
+
+    def show(run: str, stage: str) -> None:
+        nonlocal last
+        if run == last:
+            print(f" > {stage}", end="", flush=True)
+        else:
+            print(("\n" if last else "") + f"      {run + ':':14s}{stage}", end="", flush=True)
+            last = run
+    return show
+
+
 def cmd_generate(scale: str, seed: int, out: Path, anomalies: bool = True, quiet: bool = False) -> dict:
-    ds = generate(RunConfig(seed=seed, scale=SCALES[scale], inject_anomalies=anomalies))
+    cfg = RunConfig(seed=seed, scale=SCALES[scale], inject_anomalies=anomalies)
+    ds = generate(cfg, None if quiet else _live_steps())
     if out.exists():
         for sub in ("csv", "json", "sql", "ground_truth"):
             shutil.rmtree(out / sub, ignore_errors=True)
+    if not quiet:
+        print(f"\n      {'export:':14s}csv, json, sql, ground_truth, manifest.json", flush=True)
     manifest = export(ds, out)
     if ds.baseline is not None:
         base = ds.baseline.tables
@@ -55,6 +73,7 @@ def cmd_validate(data: Path, quiet: bool = False) -> bool:
         print(f"validation {'PASS' if rep.ok else 'FAIL'}: {len(rep.rows)} checks, {len(failing)} failing")
         for r in failing[:25]:
             print(f"  FAIL [{r['category']}] {r['check']}: {r['failed']} e.g. {r['examples']}")
+        print(f"  reports: {_label(reports)}/ (validation_summary.md, control_findings.csv, metrics.md)")
     return rep.ok
 
 
@@ -81,8 +100,10 @@ def cmd_reproduce(scale: str, seed: int, out: Path, shipped: Path | None = None)
     runs = []
     with tempfile.TemporaryDirectory() as tmp:
         for i in (1, 2):
+            print("      run 1" if i == 1 else " > run 2", end="", flush=True)
             m = cmd_generate(scale, seed, Path(tmp) / f"run{i}", quiet=True)
             runs.append({f["path"]: (f["rows"], f["sha256"]) for f in m["files"]})
+    print()
     same = runs[0] == runs[1]
     ship, why = _shipped_checksums(shipped, seed)
     rows = [{"path": p, "rows": runs[0][p][0], "sha256_run1": runs[0][p][1], "sha256_run2": runs[1][p][1],
@@ -146,16 +167,28 @@ def main(argv=None) -> int:
     if args.cmd == "reproduce":
         shipped = ROOT / "data" / args.scale
         return 0 if cmd_reproduce(args.scale, args.seed, shipped / "reports", shipped) else 1
+    dictionary = ROOT / "docs" / "data_dictionary.md"
     if args.cmd == "docs":
-        docs.write_data_dictionary(ROOT / "docs" / "data_dictionary.md")
+        docs.write_data_dictionary(dictionary)
+        print(f"wrote {_label(dictionary)}")
         return 0
-    ok = True
+    ok, started = True, time.perf_counter()
+    print(f"procurement_synth all, seed {args.seed}: starter (10%), then full (brief volumes)")
     for scale in ("starter", "full"):
         out = ROOT / "data" / scale
+        print(f"\n=== {scale} {'=' * (67 - len(scale))}")
+        print("[1/3] Generate: pipeline stages run twice, baseline first, then with labelled edge cases")
         cmd_generate(scale, args.seed, out)
+        print("[2/3] Validate: schema, keys, dates, amounts, business rules, ground truth; controls; metrics")
         ok &= cmd_validate(out)
+        print("[3/3] Reproduce: generate twice more in a temp folder, compare every file's SHA-256")
         ok &= cmd_reproduce(scale, args.seed, out / "reports", out)
-    docs.write_data_dictionary(ROOT / "docs" / "data_dictionary.md")
+    docs.write_data_dictionary(dictionary)
+    print(f"\n[docs] {_label(dictionary)} rebuilt from the schema")
+    took = f"{time.perf_counter() - started:.1f} s"
+    print(f"\nRESULT: PASS - every stage passed for starter and full ({took})" if ok
+          else f"\nRESULT: FAIL - see the FAIL / MISMATCH lines above ({took})")
+    print("Start with data/full/reports/validation_summary.md and data/full/reports/metrics.md")
     return 0 if ok else 1
 
 

@@ -48,8 +48,12 @@ def test_clean_baseline_has_no_control_findings(starter):
 
 def test_same_seed_is_byte_identical(tmp_path, starter):
     _, _, first = starter
-    second = export(generate(RunConfig(scale=SCALES["starter"])), tmp_path)
+    stages = []
+    ds = generate(RunConfig(scale=SCALES["starter"]), progress=lambda run, stage: stages.append((run, stage)))
+    second = export(ds, tmp_path)                 # reporting progress must not change a byte
     assert [(f["path"], f["sha256"]) for f in first["files"]] == [(f["path"], f["sha256"]) for f in second["files"]]
+    pipeline = ["master data", "demand", "budgets", "sourcing", "process simulation", "finalize"]
+    assert stages == [("baseline run", s) for s in pipeline] + [("injected run", s) for s in pipeline]
 
 
 def test_different_seed_changes_data(tmp_path, starter):
